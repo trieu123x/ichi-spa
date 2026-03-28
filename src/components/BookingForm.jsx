@@ -1,10 +1,40 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { MapPin, Phone, Clock, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const BookingForm = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    service: 'Massage Trị Liệu',
+    date: '',
+    note: ''
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsSubmitted(true);
+    }, 1500);
+  };
+
+  const handleReset = () => {
+    setIsSubmitted(false);
+    setFormData({
+      name: '',
+      phone: '',
+      service: 'Massage Trị Liệu',
+      date: '',
+      note: ''
+    });
+  };
 
   return (
     <section id="liên hệ" className="grid grid-cols-1 lg:grid-cols-2 bg-wood-dark text-cream overflow-hidden">
@@ -64,60 +94,127 @@ const BookingForm = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-wood-dark p-6 py-16 lg:p-20 flex flex-col justify-center border-t border-white/5 lg:border-t-0 lg:border-l"
+        className="bg-wood-dark p-6 py-16 lg:p-20 flex flex-col justify-center border-t border-white/5 lg:border-t-0 lg:border-l min-h-[500px]"
       >
-        <form className="grid gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-3">
-              <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.name')}</label>
-              <input 
-                type="text" 
-                placeholder="Nguyễn Thị Lan"
-                className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
-              />
-            </div>
-            <div className="space-y-3">
-              <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.phone')}</label>
-              <input 
-                type="tel" 
-                placeholder="09xx xxx xxx"
-                className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
-              />
-            </div>
-          </div>
+        <AnimatePresence mode="wait">
+          {!isSubmitted ? (
+            <motion.form 
+              key="form"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              onSubmit={handleSubmit} 
+              className="grid gap-8"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-3">
+                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.name')}</label>
+                  <input 
+                    required
+                    type="text" 
+                    placeholder="Nguyễn Thị Lan"
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
+                  />
+                </div>
+                <div className="space-y-3">
+                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.phone')}</label>
+                  <input 
+                    required
+                    type="tel" 
+                    placeholder="09xx xxx xxx"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
+                  />
+                </div>
+              </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-3">
-              <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.service')}</label>
-              <select className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all appearance-none cursor-pointer">
-                <option className="bg-wood-dark">Massage Trị Liệu</option>
-                <option className="bg-wood-dark">Chăm Sóc Da Mặt</option>
-                <option className="bg-wood-dark">Cổ Vai Gáy</option>
-                <option className="bg-wood-dark">Gội Đầu Dưỡng Sinh</option>
-              </select>
-            </div>
-            <div className="space-y-3">
-              <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.date')}</label>
-              <input 
-                type="date" 
-                className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all invert opacity-70"
-              />
-            </div>
-          </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-3">
+                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.service')}</label>
+                  <select 
+                    value={formData.service}
+                    onChange={(e) => setFormData({...formData, service: e.target.value})}
+                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all appearance-none cursor-pointer"
+                  >
+                    <option className="bg-wood-dark">Massage Trị Liệu</option>
+                    <option className="bg-wood-dark">Chăm Sóc Da Mặt</option>
+                    <option className="bg-wood-dark">Cổ Vai Gáy</option>
+                    <option className="bg-wood-dark">Gội Đầu Dưỡng Sinh</option>
+                  </select>
+                </div>
+                <div className="space-y-3">
+                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.date')}</label>
+                  <input 
+                    required
+                    type="date" 
+                    value={formData.date}
+                    onChange={(e) => setFormData({...formData, date: e.target.value})}
+                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all invert opacity-70"
+                  />
+                </div>
+              </div>
 
-          <div className="space-y-3">
-            <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.note')}</label>
-            <textarea 
-              rows="3"
-              placeholder="..."
-              className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all resize-none placeholder:opacity-30"
-            />
-          </div>
+              <div className="space-y-3">
+                <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.note')}</label>
+                <textarea 
+                  rows="3"
+                  placeholder="..."
+                  value={formData.note}
+                  onChange={(e) => setFormData({...formData, note: e.target.value})}
+                  className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all resize-none placeholder:opacity-30"
+                />
+              </div>
 
-          <button type="submit" className="w-full py-5 bg-accent text-wood-dark text-[0.85rem] rounded-[2px] uppercase tracking-[0.2em] font-bold hover:bg-[#d4b585] transition-all transform hover:-translate-y-1 active:scale-95 shadow-lg">
-            {t('booking.form.submit')}
-          </button>
-        </form>
+              <button 
+                type="submit" 
+                disabled={isLoading}
+                className="w-full py-5 bg-accent text-wood-dark text-[0.85rem] rounded-[2px] uppercase tracking-[0.2em] font-bold hover:bg-[#d4b585] transition-all transform hover:-translate-y-1 active:scale-95 shadow-lg flex items-center justify-center gap-2"
+              >
+                {isLoading ? (
+                  <div className="w-5 h-5 border-2 border-wood-dark border-t-transparent rounded-full animate-spin" />
+                ) : t('booking.form.submit')}
+              </button>
+            </motion.form>
+          ) : (
+            <motion.div 
+              key="success"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="text-center space-y-8 py-10"
+            >
+              <div className="flex justify-center">
+                <div className="relative">
+                  <motion.div 
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="p-6 bg-accent/20 rounded-full"
+                  >
+                    <CheckCircle2 size={64} className="text-accent" />
+                  </motion.div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-3xl font-serif text-be-light">{t('booking.form.success.title')}</h3>
+                <div className="space-y-2 text-[0.95rem] text-be/70 font-light leading-relaxed">
+                  <p>{t('booking.form.success.thanks')}</p>
+                  <p className="text-accent font-medium">{t('booking.form.success.time_info', { time: formData.date })}</p>
+                  <p className="italic italic-serif mt-6 opacity-80">{t('booking.form.success.footer')}</p>
+                </div>
+              </div>
+
+              <button 
+                onClick={handleReset}
+                className="px-8 py-3 border border-be/20 text-be/60 text-[0.7rem] uppercase tracking-widest hover:border-accent hover:text-accent transition-all rounded-sm"
+              >
+                Đặt lại / Back
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
     </section>
   );

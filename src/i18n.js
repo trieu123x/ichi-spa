@@ -74,7 +74,13 @@ i18n
               service: "Dịch vụ",
               date: "Ngày hẹn",
               note: "Ghi chú thêm",
-              submit: "Xác nhận đặt lịch ↗"
+              submit: "Xác nhận đặt lịch ↗",
+              success: {
+                title: "Đặt lịch thành công! ",
+                thanks: "Cảm ơn bạn đã tin tưởng Ichi Spa.",
+                time_info: "Chúng tôi sẽ chăm sóc bạn vào {{time}}.",
+                footer: "Hẹn gặp bạn để tận hưởng trải nghiệm thư giãn tuyệt vời "
+              }
             }
           },
           menu_page: {
@@ -165,7 +171,13 @@ i18n
               service: "Service",
               date: "Appointment Date",
               note: "Additional Notes",
-              submit: "Confirm Booking ↗"
+              submit: "Confirm Booking ↗",
+              success: {
+                title: "Booking Successful! ",
+                thanks: "Thank you for choosing Ichi Spa.",
+                time_info: "We will take care of you on {{time}}.",
+                footer: "See you soon for a wonderful relaxation experience "
+              }
             }
           },
           menu_page: {
@@ -256,7 +268,13 @@ i18n
               service: "サービス",
               date: "予約日",
               note: "備考",
-              submit: "予約を確定する ↗"
+              submit: "予約を確定する ↗",
+              success: {
+                title: "予約が完了しました！ ",
+                thanks: "Ichi Spaをご利用いただきありがとうございます。",
+                time_info: "{{time}}にお待ちしております。",
+                footer: "最高の美と癒やしのひとときをお楽しみください "
+              }
             }
           },
           menu_page: {
