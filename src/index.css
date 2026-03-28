@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Italiana", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-wood: #7B5C3E;
+  --color-wood-light: #A07850;
+  --color-wood-dark: #4E3520;
+  --color-be: #E8DCCB;
+  --color-be-light: #F5EFE4;
+  --color-be-soft: #FAF6F0;
+  --color-cream: #FDF9F4;
+  --color-text-dark: #2E1F0E;
+  --color-text-mid: #6B4F35;
+  --color-text-soft: #9C7D5F;
+  --color-accent: #C9A97A;
+  --color-line: rgba(123,92,62,0.15);
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-text-dark font-sans;
+  }
+}
