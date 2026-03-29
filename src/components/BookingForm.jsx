@@ -64,7 +64,7 @@ const BookingForm = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-[0.65rem] uppercase tracking-widest text-accent/60 mb-1">{t('booking.info.address')}</span>
-              123 Đường Hoàng Hoa Thám, Hà Nội
+              108 Phan Kế Bính, Ba Đình, Hà Nội
             </div>
           </div>
           <div className="flex items-start gap-4 text-[0.85rem] text-be/70 hover:text-accent transition-colors duration-300">
@@ -73,7 +73,7 @@ const BookingForm = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-[0.65rem] uppercase tracking-widest text-accent/60 mb-1">{t('booking.info.phone')}</span>
-              0912 345 678
+              0395 093 087
             </div>
           </div>
           <div className="flex items-start gap-4 text-[0.85rem] text-be/70 hover:text-accent transition-colors duration-300">

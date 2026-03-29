@@ -104,19 +104,19 @@ const Services = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="grid grid-cols-1 gap-px bg-line md:grid-cols-2 lg:grid-cols-4"
+        className="grid grid-cols-2 gap-px bg-line md:grid-cols-2 lg:grid-cols-4"
       >
         {services.map((service, idx) => (
           <motion.div 
             key={idx} 
             variants={itemVariants}
-            className="group relative bg-cream p-10 transition-colors hover:bg-be-light cursor-pointer"
+            className="group relative bg-cream p-5 sm:p-10 transition-colors hover:bg-be-light cursor-pointer"
           >
             <Link to="/menu" className="absolute inset-0 z-10" />
             <div className="transform group-hover:scale-110 transition-transform duration-500 origin-left">
               {service.icon}
             </div>
-            <h3 className="mb-3 text-2xl font-serif text-wood-dark font-normal">{service.name}</h3>
+            <h3 className="mb-2 text-lg sm:text-2xl font-serif text-wood-dark font-normal">{service.name}</h3>
             <p className="mb-8 text-[0.88rem] leading-relaxed font-light text-text-soft opacity-80">{service.desc}</p>
             <div className="text-[0.9rem] font-medium tracking-tight text-wood">{service.price}</div>
             <ArrowUpRight className="absolute transition-all duration-300 bottom-8 right-8 w-6 h-6 text-accent opacity-40 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />

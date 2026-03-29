@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Leaf } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -83,8 +83,30 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12">
-      <Link to="/" className="text-3xl font-bold tracking-[0.18em] font-serif text-wood-dark hover:opacity-80 transition-opacity">
-        ichi <span className="italic font-normal text-wood-light">spa</span>
+      <Link to="/" className="group relative flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <motion.div 
+          whileHover={{ rotate: -10, scale: 1.1 }}
+          className="relative flex items-center justify-center w-12 h-12 rounded-full bg-linear-to-tr from-wood/30 to-accent/30"
+        >
+          <Leaf className="text-wood-dark w-7 h-7" strokeWidth={2} />
+          <motion.div 
+            animate={{ scale: [1, 1.25, 1], opacity: [0.3, 0.7, 0.3] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute inset-0 rounded-full bg-accent/20 blur-lg"
+          />
+        </motion.div>
+        
+        <div className="flex flex-col -space-y-1.5">
+          <span className="text-4xl font-bold tracking-tight font-brand text-wood-dark leading-none">
+            ichi
+          </span>
+          <div className="flex items-center gap-2 pt-1">
+            <div className="h-[2px] w-6 bg-accent" />
+            <span className="text-sm font-sans font-bold uppercase tracking-[0.5em] text-wood-light">
+              spa
+            </span>
+          </div>
+        </div>
       </Link>
       
       {/* Desktop Links */}
@@ -125,6 +147,8 @@ const Navbar = () => {
           <FlagButton lng="vi" countryCode="vn" title="Tiếng Việt" />
           <FlagButton lng="en" countryCode="us" title="English" />
           <FlagButton lng="jp" countryCode="jp" title="日本語" />
+          <FlagButton lng="ko" countryCode="kr" title="한국어" />
+          <FlagButton lng="zh" countryCode="cn" title="中文" />
         </div>
 
         <a 
@@ -200,6 +224,12 @@ const Navbar = () => {
                   </button>
                   <button onClick={() => { changeLanguage('jp'); setIsOpen(false); }}>
                      <img src="https://flagcdn.com/w40/jp.png" alt="JP" className={`w-8 h-auto ${i18n.language.startsWith('jp') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
+                  </button>
+                  <button onClick={() => { changeLanguage('ko'); setIsOpen(false); }}>
+                     <img src="https://flagcdn.com/w40/kr.png" alt="KR" className={`w-8 h-auto ${i18n.language.startsWith('ko') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
+                  </button>
+                  <button onClick={() => { changeLanguage('zh'); setIsOpen(false); }}>
+                     <img src="https://flagcdn.com/w40/cn.png" alt="CN" className={`w-8 h-auto ${i18n.language.startsWith('zh') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
                   </button>
                 </div>
               </div>

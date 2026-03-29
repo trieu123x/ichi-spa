@@ -17,7 +17,7 @@ export const extendedServices = [
       en: ["Stress relief", "Soft skin", "Better sleep"],
       jp: ["ストレス軽減", "肌の軟化", "安眠"]
     },
-    images: ["/1010574840257195780.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
+    images: ["/aroma.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
   },
   {
     id: 'body-hotstone',

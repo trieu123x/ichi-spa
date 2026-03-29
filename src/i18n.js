@@ -302,6 +302,200 @@ i18n
             }
           }
         }
+      },
+      ko: {
+        translation: {
+          nav: {
+            home: "소개",
+            services: "서비스",
+            menu: "메뉴",
+            prices: "가격표",
+            contact: "연락처",
+            book_now: "지금 예약"
+          },
+          hero: {
+            subtitle: "휴식 · 회복 · 재생",
+            title_part1: "당신이",
+            title_part2: "자신을",
+            title_italic: "찾는 곳",
+            desc: "Ichi Spa는 자연과 치료 예술이 어우러져 몸과 마음을 모두 보살피는 통합적인 웰니스 경험을 제공합니다.",
+            btn_explore: "서비스 탐색",
+            btn_prices: "가격표"
+          },
+          stats: {
+            clients: "신뢰하는 고객",
+            specialists: "숙련된 전문가",
+            categories: "주요 서비스 그룹",
+            natural: "100% 천연 성분"
+          },
+          services: {
+            subtitle: "우리의 서비스",
+            title_part1: "최고의",
+            title_italic: "리액세이션",
+            title_part2: "경험",
+            view_all: "모두 보기"
+          },
+          prices: {
+            subtitle: "서비스 상세",
+            title_part1: "가격표",
+            title_italic: "서비스",
+            swipe_hint: "더 보려면 스와이프하세요 →",
+            table: {
+              service: "서비스",
+              time: "시간",
+              desc: "설명",
+              price: "가격 (VND)"
+            }
+          },
+          booking: {
+            subtitle: "예약하기",
+            title_part1: "당신을 위한",
+            title_part2: "시간을",
+            title_italic: "가지세요",
+            desc: "최고의 공간과 전문가를 준비하여 완벽한 휴식 경험을 선사하겠습니다. 우선적인 시간 확보를 위해 사전 예약을 권장합니다.",
+            info: {
+              address: "주소",
+              phone: "전화번호",
+              opening: "영업 시간",
+              opening_val: "매일 9:00 - 21:00"
+            },
+            form: {
+              name: "성함",
+              phone: "전화번호",
+              service: "서비스",
+              date: "예약 날짜",
+              note: "추가 메모",
+              submit: "예약 확정 ↗",
+              success: {
+                title: "예약 성공! ",
+                thanks: "Ichi Spa를 선택해 주셔서 감사합니다.",
+                time_info: "{{time}}에 모시겠습니다.",
+                footer: "최고의 미와 힐링의 시간을 즐겨보세요 "
+              }
+            }
+          },
+          menu_page: {
+            subtitle: "치유 의식",
+            title: "서비스 메뉴",
+            desc: "허브와 치료 기술의 심포니를 탐색해 보세요. 각 치료는 마법 같은 재생의 여정입니다.",
+            back: "메뉴로 돌아가기"
+          },
+          menu: {
+            "body-aroma": {
+              name: "치료 마사지",
+              desc: "프리미엄 천연 에센셜 오일을 사용한 전통 마사지로 몸을 회복시킵니다."
+            },
+            "facial-basic": {
+              name: "페이셜 케어",
+              desc: "첨단 기술을 통한 딥 클렌징, 회복 및 영양 공급 트리트먼트."
+            },
+            "neck-shoulder-pro": {
+              name: "목 & 어깨 케어",
+              desc: "사무직의 통증을 해결하고 목 관절의 유연성을 회복시키는 전문 솔루션."
+            },
+            "hair-60": {
+              name: "영양 샴푸",
+              desc: "두피 마사지와 허브 헤어 마스크를 결합하여 모발을 부드럽게 하고 깊은 휴식을 제공합니다."
+            }
+          }
+        }
+      },
+      zh: {
+        translation: {
+          nav: {
+            home: "关于我们",
+            services: "服务项目",
+            menu: "菜单",
+            prices: "价格表",
+            contact: "联系我们",
+            book_now: "立即预约"
+          },
+          hero: {
+            subtitle: "放松 · 恢复 · 重生",
+            title_part1: "在这里",
+            title_part2: "找回",
+            title_italic: "真实的自己",
+            desc: "Ichi Spa 提供全面的健康护理体验，将自然与疗愈艺术完美结合，滋养您的身心。",
+            btn_explore: "探索服务",
+            btn_prices: "价格表"
+          },
+          stats: {
+            clients: "值得信赖的客户",
+            specialists: "经验丰富的专家",
+            categories: "主要服务类别",
+            natural: "100% 天然成分"
+          },
+          services: {
+            subtitle: "我们的服务",
+            title_part1: "体验",
+            title_italic: "极致放松",
+            title_part2: "之旅",
+            view_all: "查看全部"
+          },
+          prices: {
+            subtitle: "服务详情",
+            title_part1: "服务",
+            title_italic: "价格表",
+            swipe_hint: "左右滑动查看更多 →",
+            table: {
+              service: "服务项目",
+              time: "时长",
+              desc: "描述",
+              price: "价格 (VND)"
+            }
+          },
+          booking: {
+            subtitle: "预约挂号",
+            title_part1: "留点时间",
+            title_part2: "给",
+            title_italic: "你自己",
+            desc: "我们将为您准备最舒适的空间和最专业的理疗师，为您提供完美的放松体验。建议提前预约以确保您的理想时间。",
+            info: {
+              address: "地址",
+              phone: "电话",
+              opening: "营业时间",
+              opening_val: "每日 9:00 - 21:00"
+            },
+            form: {
+              name: "姓名",
+              phone: "手机号码",
+              service: "预约项目",
+              date: "预约日期",
+              note: "备注信息",
+              submit: "确认预约 ↗",
+              success: {
+                title: "预约成功！",
+                thanks: "感谢您选择 Ichi Spa。",
+                time_info: "我们将于 {{time}} 为您服务。",
+                footer: "期待为您带来美妙的放松体验"
+              }
+            }
+          },
+          menu_page: {
+            subtitle: "治愈仪式",
+            title: "服务菜单",
+            desc: "探索草药与理疗技术的交响乐，每一次疗程都是一场奇妙的重生之旅。",
+            back: "返回菜单"
+          },
+          menu: {
+            "body-aroma": {
+              name: "疗愈按摩",
+              desc: "结合高端天然精油与传统按摩技术，助您恢复元气。"
+            },
+            "facial-basic": {
+              name: "面部护理",
+              desc: "采用先进技术进行深层清洁、修复与滋养护理。"
+            },
+            "neck-shoulder-pro": {
+              name: "颈肩理疗",
+              desc: "针对办公室族群的疼痛问题，恢复颈部关节灵活性。"
+            },
+            "hair-60": {
+              name: "滋养洗发",
+              desc: "结合头皮按摩与草本发膜，令秀发柔顺并深度放松感官。"
+            }
+          }
+        }
       }
     }
   });
