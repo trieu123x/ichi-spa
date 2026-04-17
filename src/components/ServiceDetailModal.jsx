@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const ServiceDetailModal = ({ service, onClose }) => {
   const [currentImg, setCurrentImg] = useState(0);
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language.startsWith('vi') ? 'vi' : 'en';
+  const currentLang = i18n.language.startsWith('vi') ? 'vi' : i18n.language.startsWith('jp') ? 'jp' : i18n.language.startsWith('ko') ? 'ko' : i18n.language.startsWith('zh') ? 'zh' : 'en';
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -69,16 +69,22 @@ const ServiceDetailModal = ({ service, onClose }) => {
           <div className="flex gap-6 mb-8 border-b border-line pb-6">
             <div className="flex items-center gap-2 text-[0.85rem] text-text-mid">
               <Clock size={16} className="text-accent" />
-              {service.duration}
+              {service.duration[currentLang]}
             </div>
             <div className="flex items-center gap-2 text-[0.85rem] text-wood font-medium">
               <Banknote size={16} className="text-accent" />
-              {service.price}
+              {service.price[currentLang]}
             </div>
           </div>
 
           <div className="space-y-6 mb-8 text-[0.95rem] leading-relaxed text-text-mid font-light">
-             <p className="font-medium text-wood-dark">{currentLang === 'vi' ? 'Món quà hoàn hảo cho cơ thể và tâm hồn.' : 'A perfect gift for body and soul.'}</p>
+              <p className="font-medium text-wood-dark">
+                {currentLang === 'vi' ? 'Món quà hoàn hảo cho cơ thể và tâm hồn.' : 
+                 currentLang === 'jp' ? '心と体に最高の贈り物を。' : 
+                 currentLang === 'ko' ? '몸과 마음에 전하는 완벽한 선물.' :
+                 currentLang === 'zh' ? '送给身心的完美礼物。' :
+                 'A perfect gift for body and soul.'}
+              </p>
              <p className="opacity-80 italic italic-serif">{service.longDescription[currentLang]}</p>
           </div>
 

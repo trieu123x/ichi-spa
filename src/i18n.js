@@ -14,6 +14,9 @@ i18n
     resources: {
       vi: {
         translation: {
+          common: {
+            from: "Từ"
+          },
           nav: {
             home: "Giới thiệu",
             services: "Dịch vụ",
@@ -74,7 +77,9 @@ i18n
               service: "Dịch vụ",
               date: "Ngày hẹn",
               note: "Ghi chú thêm",
+              name_placeholder: "Nguyễn Thị Lan",
               submit: "Xác nhận đặt lịch ↗",
+              reset: "Đặt lại",
               success: {
                 title: "Đặt lịch thành công! ",
                 thanks: "Cảm ơn bạn đã tin tưởng Ichi Spa.",
@@ -111,6 +116,9 @@ i18n
       },
       en: {
         translation: {
+          common: {
+            from: "From"
+          },
           nav: {
             home: "About Us",
             services: "Services",
@@ -171,7 +179,9 @@ i18n
               service: "Service",
               date: "Appointment Date",
               note: "Additional Notes",
+              name_placeholder: "Jane Doe",
               submit: "Confirm Booking ↗",
+              reset: "Reset",
               success: {
                 title: "Booking Successful! ",
                 thanks: "Thank you for choosing Ichi Spa.",
@@ -208,6 +218,9 @@ i18n
       },
       jp: {
         translation: {
+          common: {
+            from: "から"
+          },
           nav: {
             home: "私たちについて",
             services: "サービス",
@@ -268,7 +281,9 @@ i18n
               service: "サービス",
               date: "予約日",
               note: "備考",
+              name_placeholder: "お名前",
               submit: "予約を確定する ↗",
+              reset: "リセット",
               success: {
                 title: "予約が完了しました！ ",
                 thanks: "Ichi Spaをご利用いただきありがとうございます。",
@@ -305,6 +320,9 @@ i18n
       },
       ko: {
         translation: {
+          common: {
+            from: "부터"
+          },
           nav: {
             home: "소개",
             services: "서비스",
@@ -365,7 +383,9 @@ i18n
               service: "서비스",
               date: "예약 날짜",
               note: "추가 메모",
+              name_placeholder: "이름",
               submit: "예약 확정 ↗",
+              reset: "초기화",
               success: {
                 title: "예약 성공! ",
                 thanks: "Ichi Spa를 선택해 주셔서 감사합니다.",
@@ -402,6 +422,9 @@ i18n
       },
       zh: {
         translation: {
+          common: {
+            from: "从"
+          },
           nav: {
             home: "关于我们",
             services: "服务项目",
@@ -462,7 +485,9 @@ i18n
               service: "预约项目",
               date: "预约日期",
               note: "备注信息",
+              name_placeholder: "姓名",
               submit: "确认预约 ↗",
+              reset: "重置",
               success: {
                 title: "预约成功！",
                 thanks: "感谢您选择 Ichi Spa。",

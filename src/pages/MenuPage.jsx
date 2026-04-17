@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const MenuPage = () => {
   const [selectedService, setSelectedService] = useState(null);
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language.startsWith('vi') ? 'vi' : 'en';
+  const currentLang = i18n.language.startsWith('vi') ? 'vi' : i18n.language.startsWith('jp') ? 'jp' : i18n.language.startsWith('ko') ? 'ko' : i18n.language.startsWith('zh') ? 'zh' : 'en';
 
   return (
     <div className="bg-cream pt-10 pb-24 px-6 lg:px-20 min-h-screen">
@@ -39,7 +39,7 @@ const MenuPage = () => {
               onClick={() => setSelectedService(service)}
               className="group cursor-pointer bg-white border border-line p-3 sm:p-5 rounded-sm hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:border-accent"
             >
-              <div className="relative h-40 sm:h-64 mb-4 sm:mb-6 overflow-hidden rounded-sm">
+              <div className="relative  h-40 sm:h-64 mb-4 sm:mb-6 overflow-hidden rounded-sm">
                 <img 
                   src={service.images[0]} 
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
@@ -60,16 +60,16 @@ const MenuPage = () => {
                 <span className="w-4 h-px bg-accent opacity-50"></span>
                 {service.category[currentLang]}
               </div>
-              <h3 className="text-lg sm:text-2xl font-serif text-wood-dark mb-2 sm:mb-4 group-hover:text-wood transition-colors">{service.name[currentLang]}</h3>
+              <h3 className="text-lg sm:text-2xl font-semibold font-serif text-wood-dark mb-2 sm:mb-4 group-hover:text-wood transition-colors">{service.name[currentLang]}</h3>
               
               <div className="flex justify-between items-center text-[0.8rem] text-text-mid opacity-70 mb-4 border-t border-line/50 pt-4">
                  <div className="flex items-center gap-1.5">
                    <Clock size={14} className="opacity-50" />
-                   {service.duration}
+                   {service.duration[currentLang]}
                  </div>
                  <div className="flex items-center gap-1.5 font-medium text-wood">
                    <Banknote size={14} className="opacity-50" />
-                   {service.price}
+                   {service.price[currentLang]}
                  </div>
               </div>
               

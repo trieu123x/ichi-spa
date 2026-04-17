@@ -112,7 +112,7 @@ const BookingForm = () => {
                   <input 
                     required
                     type="text" 
-                    placeholder="Nguyễn Thị Lan"
+                    placeholder={t('booking.form.name_placeholder')}
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
@@ -139,10 +139,10 @@ const BookingForm = () => {
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
                     className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all appearance-none cursor-pointer"
                   >
-                    <option className="bg-wood-dark">Massage Trị Liệu</option>
-                    <option className="bg-wood-dark">Chăm Sóc Da Mặt</option>
-                    <option className="bg-wood-dark">Cổ Vai Gáy</option>
-                    <option className="bg-wood-dark">Gội Đầu Dưỡng Sinh</option>
+                    <option className="bg-wood-dark" value="Massage Trị Liệu">{t('menu.body-aroma.name')}</option>
+                    <option className="bg-wood-dark" value="Chăm Sóc Da Mặt">{t('menu.facial-basic.name')}</option>
+                    <option className="bg-wood-dark" value="Cổ Vai Gáy">{t('menu.neck-shoulder-pro.name')}</option>
+                    <option className="bg-wood-dark" value="Gội Đầu Dưỡng Sinh">{t('menu.hair-60.name')}</option>
                   </select>
                 </div>
                 <div className="space-y-3">
@@ -210,7 +210,7 @@ const BookingForm = () => {
                 onClick={handleReset}
                 className="px-8 py-3 border border-be/20 text-be/60 text-[0.7rem] uppercase tracking-widest hover:border-accent hover:text-accent transition-all rounded-sm"
               >
-                Đặt lại / Back
+                {t('booking.form.reset')}
               </button>
             </motion.div>
           )}

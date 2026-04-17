@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const PriceTable = () => {
   const [activeTab, setActiveTab] = useState('body');
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language.startsWith('vi') ? 'vi' : 'en';
+  const currentLang = i18n.language.startsWith('vi') ? 'vi' : i18n.language.startsWith('jp') ? 'jp' : i18n.language.startsWith('ko') ? 'ko' : i18n.language.startsWith('zh') ? 'zh' : 'en';
 
   return (
     <section id="bảng giá" className="px-6 py-24 lg:px-12 bg-be-soft">
@@ -99,7 +99,7 @@ const PriceTable = () => {
                           {item.description[currentLang]}
                         </td>
                         <td className="py-8 text-right font-semibold text-wood whitespace-nowrap">
-                          {item.price.join(' / ')}
+                          {item.price[currentLang]}
                         </td>
                       </tr>
                     ))}

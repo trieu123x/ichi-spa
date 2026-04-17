@@ -11,7 +11,7 @@ const Services = () => {
     {
       name: t('menu.body-aroma.name', 'Massage Trị Liệu'),
       desc: t('menu.body-aroma.desc', 'Phục hồi cơ thể với kỹ thuật massage truyền thống kết hợp tinh dầu thiên nhiên cao cấp.'),
-      price: 'Từ 450.000 ₫',
+      price: `${t('common.from', 'Từ')} 450.000 ₫`,
       icon: (
         <svg className="w-12 h-12 mb-6" viewBox="0 0 48 48" fill="none">
           <circle cx="24" cy="24" r="20" fill="#E8DCCB" />
@@ -23,7 +23,7 @@ const Services = () => {
     {
       name: t('menu.facial-basic.name', 'Chăm Sóc Da Mặt'),
       desc: t('menu.facial-basic.desc', 'Liệu trình làm sạch sâu, phục hồi và nuôi dưỡng da với công nghệ tiên tiến.'),
-      price: 'Từ 550.000 ₫',
+      price: `${t('common.from', 'Từ')} 550.000 ₫`,
       icon: (
         <svg className="w-12 h-12 mb-6" viewBox="0 0 48 48" fill="none">
           <circle cx="24" cy="24" r="20" fill="#E8DCCB" />
@@ -35,7 +35,7 @@ const Services = () => {
     {
       name: t('menu.neck-shoulder-pro.name', 'Cổ Vai Gáy'),
       desc: t('menu.neck-shoulder-pro.desc', 'Giải pháp đặc trị đau mỏi cho dân văn phòng, khôi phục sự linh hoạt cho khớp cổ.'),
-      price: 'Từ 490.000 ₫',
+      price: `${t('common.from', 'Từ')} 490.000 ₫`,
       icon: (
         <svg className="w-12 h-12 mb-6" viewBox="0 0 48 48" fill="none">
           <circle cx="24" cy="24" r="20" fill="#E8DCCB" />
@@ -47,7 +47,7 @@ const Services = () => {
     {
       name: t('menu.hair-60.name', 'Gội Đầu Dưỡng Sinh'),
       desc: t('menu.hair-60.desc', 'Kết hợp massage da đầu và ủ tóc thảo dược, giúp tóc mềm mượt và thư giãn sâu.'),
-      price: 'Từ 99.000 ₫',
+      price: `${t('common.from', 'Từ')} 99.000 ₫`,
       icon: (
         <svg className="w-12 h-12 mb-6" viewBox="0 0 48 48" fill="none">
           <circle cx="24" cy="24" r="20" fill="#E8DCCB" />
