@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X, Leaf, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -71,15 +71,96 @@ const Navbar = () => {
     i18n.changeLanguage(lng);
   };
 
-  const FlagButton = ({ lng, countryCode, title }) => (
-    <button 
-      onClick={() => changeLanguage(lng)}
-      className={`transition-all p-1 hover:bg-wood/5 rounded-sm ${i18n.language.startsWith(lng) ? 'scale-110 grayscale-0 border-b-2 border-accent pb-1' : 'grayscale opacity-50 hover:grayscale-0 hover:opacity-100'}`}
-      title={title}
-    >
-      <img src={`https://flagcdn.com/w40/${countryCode}.png`} alt={lng} className="w-8 h-auto rounded-[1px] shadow-md" />
-    </button>
-  );
+  const languages = [
+    { code: 'vi', countryCode: 'vn', label: 'Tiếng Việt' },
+    { code: 'en', countryCode: 'us', label: 'English' },
+    { code: 'jp', countryCode: 'jp', label: '日本語' },
+    { code: 'ko', countryCode: 'kr', label: '한국어' },
+    { code: 'zh', countryCode: 'cn', label: '中文' },
+  ];
+
+  const currentLanguage = languages.find(l => i18n.language.startsWith(l.code)) || languages[1];
+
+  const LanguageSelector = ({ isMobile = false }) => {
+    const [isLangOpen, setIsLangOpen] = useState(false);
+
+    return (
+      <div className="relative">
+        <button
+          onClick={() => setIsLangOpen(!isLangOpen)}
+          className={`flex items-center gap-2 px-3 py-1.5 rounded-sm transition-all duration-300 ${
+            isMobile 
+              ? 'bg-be-soft w-full justify-between border border-line/30' 
+              : 'hover:bg-wood/5 border border-transparent hover:border-line/30'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            <img 
+              src={`https://flagcdn.com/w40/${currentLanguage.countryCode}.png`} 
+              alt={currentLanguage.code} 
+              className="w-5 h-auto rounded-[1px] shadow-sm"
+            />
+            <span className={`text-[0.7rem] uppercase tracking-widest font-medium ${isMobile ? 'text-text-dark' : 'text-text-mid'}`}>
+              {currentLanguage.label}
+            </span>
+          </div>
+          <motion.div
+            animate={{ rotate: isLangOpen ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ChevronDown size={14} className="text-accent" />
+          </motion.div>
+        </button>
+
+        <AnimatePresence>
+          {isLangOpen && (
+            <>
+              {/* Backdrop to close on click outside */}
+              {!isMobile && (
+                <div 
+                  className="fixed inset-0 z-10" 
+                  onClick={() => setIsLangOpen(false)}
+                />
+              )}
+              <motion.div
+                initial={{ opacity: 0, y: isMobile ? 10 : 10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                className={`${
+                  isMobile 
+                    ? 'relative mt-2 w-full grid grid-cols-2 gap-2' 
+                    : 'absolute left-0 lg:left-auto lg:right-0 mt-2 w-48 bg-white border border-line shadow-xl rounded-sm py-2 z-20'
+                }`}
+              >
+                {languages.map((lng) => (
+                  <button
+                    key={lng.code}
+                    onClick={() => {
+                      changeLanguage(lng.code);
+                      setIsLangOpen(false);
+                      if (isMobile) setIsOpen(false);
+                    }}
+                    className={`flex items-center gap-3 px-4 py-2 text-[0.75rem] transition-colors w-full text-left ${
+                      i18n.language.startsWith(lng.code)
+                        ? 'bg-wood/10 text-wood font-semibold'
+                        : 'text-text-mid hover:bg-wood/5'
+                    } ${isMobile ? 'bg-white border border-line/50 rounded-sm' : ''}`}
+                  >
+                    <img 
+                      src={`https://flagcdn.com/w40/${lng.countryCode}.png`} 
+                      alt={lng.code} 
+                      className="w-5 h-auto rounded-[1px]"
+                    />
+                    <span>{lng.label}</span>
+                  </button>
+                ))}
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  };
 
   return (
     <nav className="sticky top-0 z-50 flex flex-col lg:flex-row items-center lg:justify-between px-6 py-3 lg:py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12 gap-y-3 lg:gap-y-0">
@@ -109,11 +190,9 @@ const Navbar = () => {
             </div>
           </div>
         </Link>
-
-        {/* Mobile-only Book Now or Secondary toggle could go here, but user wants flags + menu together on line 2 */}
       </div>
       
-      {/* Desktop Links - Hidden on Mobile, and since parents are flex-col on mobile, they don't affect Line 2 */}
+      {/* Desktop Links */}
       <div className="hidden space-x-1 lg:flex items-center">
         {navLinks.map((item, idx) => {
           const active = isActive(item);
@@ -145,14 +224,10 @@ const Navbar = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-between w-full lg:w-auto gap-3 lg:gap-3">
-        {/* Language Flags */}
-        <div className={`flex items-center gap-2 lg:gap-2 overflow-x-auto transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto' : 'opacity-100'}`}>
-          <FlagButton lng="vi" countryCode="vn" title="Tiếng Việt" />
-          <FlagButton lng="en" countryCode="us" title="English" />
-          <FlagButton lng="jp" countryCode="jp" title="日本語" />
-          <FlagButton lng="ko" countryCode="kr" title="한국어" />
-          <FlagButton lng="zh" countryCode="cn" title="中文" />
+      <div className="flex items-center justify-between w-full lg:w-auto gap-4 lg:gap-6">
+        {/* Language Dropdown - Hidden on Mobile Toggle */}
+        <div className={`transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto' : 'opacity-100'}`}>
+          <LanguageSelector />
         </div>
 
         <div className="flex items-center gap-3">
@@ -219,25 +294,9 @@ const Navbar = () => {
                 );
               })}
               
-              <div className="flex gap-5 p-4 items-center bg-be-soft rounded-sm mt-4">
+              <div className="flex flex-col gap-4 p-4 bg-be-soft rounded-sm mt-4">
                 <span className="text-[0.65rem] uppercase tracking-[0.2em] text-text-soft">Language:</span>
-                <div className="flex gap-4">
-                  <button onClick={() => { changeLanguage('vi'); setIsOpen(false); }}>
-                     <img src="https://flagcdn.com/w40/vn.png" alt="VN" className={`w-8 h-auto ${i18n.language.startsWith('vi') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
-                  </button>
-                  <button onClick={() => { changeLanguage('en'); setIsOpen(false); }}>
-                     <img src="https://flagcdn.com/w40/us.png" alt="US" className={`w-8 h-auto ${i18n.language.startsWith('en') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
-                  </button>
-                  <button onClick={() => { changeLanguage('jp'); setIsOpen(false); }}>
-                     <img src="https://flagcdn.com/w40/jp.png" alt="JP" className={`w-8 h-auto ${i18n.language.startsWith('jp') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
-                  </button>
-                  <button onClick={() => { changeLanguage('ko'); setIsOpen(false); }}>
-                     <img src="https://flagcdn.com/w40/kr.png" alt="KR" className={`w-8 h-auto ${i18n.language.startsWith('ko') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
-                  </button>
-                  <button onClick={() => { changeLanguage('zh'); setIsOpen(false); }}>
-                     <img src="https://flagcdn.com/w40/cn.png" alt="CN" className={`w-8 h-auto ${i18n.language.startsWith('zh') ? 'scale-110 shadow-md' : 'grayscale opacity-50'}`} />
-                  </button>
-                </div>
+                <LanguageSelector isMobile={true} />
               </div>
 
               <hr className="border-line/50 my-6" />

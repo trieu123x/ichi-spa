@@ -27,7 +27,7 @@ const Footer = () => {
               Hotline: 0395 093 087
             </p>
             <p className="mt-2 opacity-40 italic">
-              {t('booking.info.opening_val')}
+              10:00 - 22:00 Daily
             </p>
           </div>
         </div>
