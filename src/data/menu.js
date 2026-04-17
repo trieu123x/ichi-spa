@@ -1,7 +1,7 @@
 export const menuData = {
   body: {
     title: { 
-      vi: "Body & Foot Trị Liệu", 
+      vi: "Body & Foot Liệu Trình", 
       en: "Body & Foot Therapy", 
       jp: "ボディ＆フットセラピー",
       ko: "바디 & 풋 테라피",
@@ -10,7 +10,7 @@ export const menuData = {
     sections: [
       {
         subtitle: { 
-          vi: "I. Trị Liệu Toàn Thân (Thư giãn cơ bản)", 
+          vi: "I. Liệu Trình Toàn Thân (Thư giãn cơ bản)", 
           en: "I. Full Body Therapy (Basic)", 
           jp: "I. 全身セラピー（ベーシック）",
           ko: "I. 전신 테라피 (베이직)",
@@ -30,7 +30,7 @@ export const menuData = {
             price: { vi: "450.000 / 550.000", en: "450k / 550k", jp: "450k / 550k", ko: "450k / 550k", zh: "450k / 550k" }
           },
           {
-            name: { vi: "Trị liệu toàn thân với Đá Nóng", en: "Hot Stone Body Therapy", jp: "ホットストーン・ボディセラピー", ko: "핫스톤 전신 테라피", zh: "热石全身理疗" },
+            name: { vi: "Liệu trình toàn thân với Đá Nóng", en: "Hot Stone Body Therapy", jp: "ホットストーン・ボディセラピー", ko: "핫스톤 전신 테라피", zh: "热石全身理疗" },
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90분"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
               vi: "Nhiệt ấm giúp làm mềm cơ và hỗ trợ cơ thể phục hồi sau những ngày căng thẳng.",
@@ -45,7 +45,7 @@ export const menuData = {
       },
       {
         subtitle: { 
-          vi: "Trị liệu chuyên sâu", 
+          vi: "Liệu trình chuyên sâu", 
           en: "Intensive Therapy", 
           jp: "集中セラピー",
           ko: "집중 테라피",
@@ -53,7 +53,7 @@ export const menuData = {
         },
         items: [
           {
-            name: { vi: "Trị liệu toàn thân với Bóng Thảo Dược", en: "Herbal Ball Body Therapy", jp: "ハーバルボール・ボディセラピー", ko: "허브볼 전신 테라피", zh: "草本球全身理疗" },
+            name: { vi: "Liệu trình toàn thân với Bóng Thảo Dược", en: "Herbal Ball Body Therapy", jp: "ハーバルボール・ボディセラピー", ko: "허브볼 전신 테라피", zh: "草本球全身理疗" },
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90분"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
               vi: "Hơi ấm thảo dược lan sâu, phù hợp với cơ thể đau mỏi kéo dài.",
@@ -76,7 +76,7 @@ export const menuData = {
         },
         items: [
           {
-            name: { vi: "Trị liệu Toàn Thân với Ngải Đặc Biệt", en: "Special Moxa Therapy", jp: "スペシャルもぐさセラピー", ko: "특별 쑥뜸 전신 테라피", zh: "特色艾灸全身理疗" },
+            name: { vi: "Liệu trình Toàn Thân với Ngải Đặc Biệt", en: "Special Moxa Therapy", jp: "スペシャルもぐさセラピー", ko: "특별 쑥뜸 전신 테라피", zh: "特色艾灸全身理疗" },
             badge: "HOT",
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
@@ -89,7 +89,7 @@ export const menuData = {
             price: { vi: "599.000 / 699.000", en: "599k / 699k", jp: "599k / 699k", ko: "599k / 699k", zh: "599k / 699k" }
           },
           {
-            name: { vi: "Trị liệu Toàn Thân với MUỐI PHỤC DƯỢC", en: "RECOVERY SALT Therapy", jp: "リカバリーソルトセラピー", ko: "리커버리 솔트 테라피", zh: "药盐修复全身理疗" },
+            name: { vi: "Liệu trình Toàn Thân với MUỐI PHỤC DƯỢC", en: "RECOVERY SALT Therapy", jp: "リカバリーソルトセラピー", ko: "리커버리 솔트 테라피", zh: "药盐修复全身理疗" },
             badge: "95% back",
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
@@ -102,7 +102,7 @@ export const menuData = {
             price: { vi: "599.000 / 699.000", en: "599k / 699k", jp: "599k / 699k", ko: "599k / 699k", zh: "599k / 699k" }
           },
           {
-            name: { vi: "Trị Liệu Toàn Thân với Bùn Cứu Dưỡng Sinh", en: "Nutritional Mud Healing", jp: "養生泥セラピー", ko: "영양 머드 힐링 테라피", zh: "养生泥灸全身理疗" },
+            name: { vi: "Liệu Trình Toàn Thân với Bùn Cứu Dưỡng Sinh", en: "Nutritional Mud Healing", jp: "養生泥セラピー", ko: "영양 머드 힐링 테라피", zh: "养生泥灸全身理疗" },
             badge: "Must try",
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
@@ -145,10 +145,10 @@ export const menuData = {
     title: { vi: "Cổ Vai Gáy", en: "Neck & Shoulder", jp: "首・肩", ko: "목과 어깨", zh: "颈肩护理" },
     sections: [
       {
-        subtitle: { vi: "II. TRỊ LIỆU CỔ VAI GÁY", en: "II. NECK & SHOULDER THERAPY", jp: "II. 首・肩セラピー", ko: "II. 목과 어깨 테라피", zh: "II. 颈肩理疗" },
+        subtitle: { vi: "II. LIỆU TRÌNH CỔ VAI GÁY", en: "II. NECK & SHOULDER THERAPY", jp: "II. 首・肩セラピー", ko: "II. 목과 어깨 테라피", zh: "II. 颈肩理疗" },
         items: [
           {
-            name: { vi: "Trị liệu Cổ Vai Gáy Chuyên Sâu", en: "Intensive Neck & Shoulder", jp: "首・肩集中ケア", ko: "목/어깨 집중 케어", zh: "深度颈肩理疗" },
+            name: { vi: "Liệu trình Cổ Vai Gáy Chuyên Sâu", en: "Intensive Neck & Shoulder", jp: "首・肩集中ケア", ko: "목/어깨 집중 케어", zh: "深度颈肩理疗" },
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60分", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: { 
               vi: "Tập trung giải phóng các điểm căng cứng vùng cổ – vai – lưng trên. Phù hợp cho dân văn phòng.",
@@ -164,13 +164,13 @@ export const menuData = {
     ]
   },
   foot: {
-    title: { vi: "Trị Liệu Chân", en: "Foot Therapy", jp: "フットセラピー", ko: "풋 테라피", zh: "足部理疗" },
+    title: { vi: "Liệu Trình Chân", en: "Foot Therapy", jp: "フットセラピー", ko: "풋 테라피", zh: "足部理疗" },
     sections: [
       {
-        subtitle: { vi: "III. TRỊ LIỆU VÙNG CHÂN", en: "III. FOOT THERAPY", jp: "III. フットセラピー", ko: "III. 풋 테라피 프로그램", zh: "III. 足部区域理疗" },
+        subtitle: { vi: "III. LIỆU TRÌNH VÙNG CHÂN", en: "III. FOOT THERAPY", jp: "III. フットセラピー", ko: "III. 풋 테라피 프로그램", zh: "III. 足部区域理疗" },
         items: [
           {
-            name: { vi: "Trị liệu chân với Đá Nóng", en: "Foot Hot Stone Therapy", jp: "フットホットストーン", ko: "발 전용 핫스톤 테라피", zh: "足部热石理疗" },
+            name: { vi: "Liệu trình chân với Đá Nóng", en: "Foot Hot Stone Therapy", jp: "フットホットストーン", ko: "발 전용 핫스톤 테라피", zh: "足部热石理疗" },
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60分", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: { 
               vi: "Làm ấm bàn chân và bắp chân, giảm cảm giác nặng - tê - mỏi.",
@@ -182,7 +182,7 @@ export const menuData = {
             price: { vi: "390.000 / 490.000", en: "390k / 490k", jp: "390k / 490k", ko: "390k / 490k", zh: "390k / 490k" }
           },
           {
-            name: { vi: "Trị liệu chân với Bóng Thảo Dược", en: "Foot Herbal Ball Therapy", jp: "フットハーバルボール", ko: "발 전용 허브볼 테라피", zh: "足部草本球理疗" },
+            name: { vi: "Liệu trình chân với Bóng Thảo Dược", en: "Foot Herbal Ball Therapy", jp: "フットハーバルボール", ko: "발 전용 허브볼 테라피", zh: "足部草本球理疗" },
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60分", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: { 
               vi: "Hơi ấm thảo dược giúp làm mềm cơ và hỗ trợ lưu thông tốt hơn.",

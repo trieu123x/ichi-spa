@@ -82,34 +82,38 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12">
-      <Link to="/" className="group relative flex items-center gap-3 hover:opacity-90 transition-opacity">
-        <motion.div 
-          whileHover={{ rotate: -10, scale: 1.1 }}
-          className="relative flex items-center justify-center w-12 h-12 rounded-full bg-linear-to-tr from-wood/30 to-accent/30"
-        >
-          <Leaf className="text-wood-dark w-7 h-7" strokeWidth={2} />
+    <nav className="sticky top-0 z-50 flex flex-col lg:flex-row items-center lg:justify-between px-6 py-3 lg:py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12 gap-y-3 lg:gap-y-0">
+      <div className="flex items-center justify-between w-full lg:w-auto">
+        <Link to="/" className="group relative flex items-center gap-3 hover:opacity-90 transition-opacity">
           <motion.div 
-            animate={{ scale: [1, 1.25, 1], opacity: [0.3, 0.7, 0.3] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute inset-0 rounded-full bg-accent/20 blur-lg"
-          />
-        </motion.div>
-        
-        <div className="flex flex-col -space-y-1.5">
-          <span className="text-4xl font-bold tracking-tight font-brand text-wood-dark leading-none">
-            ichi
-          </span>
-          <div className="flex items-center gap-2 pt-1">
-            <div className="h-[2px] w-6 bg-accent" />
-            <span className="text-sm font-sans font-bold uppercase tracking-[0.5em] text-wood-light">
-              spa
+            whileHover={{ rotate: -10, scale: 1.1 }}
+            className="relative flex items-center justify-center w-10 lg:w-12 h-10 lg:h-12 rounded-full bg-linear-to-tr from-wood/30 to-accent/30"
+          >
+            <Leaf className="text-wood-dark w-6 lg:w-7 h-6 lg:h-7" strokeWidth={2} />
+            <motion.div 
+              animate={{ scale: [1, 1.25, 1], opacity: [0.3, 0.7, 0.3] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute inset-0 rounded-full bg-accent/20 blur-lg"
+            />
+          </motion.div>
+          
+          <div className="flex flex-col -space-y-1 lg:-space-y-1.5">
+            <span className="text-3xl lg:text-4xl font-bold tracking-tight font-brand text-wood-dark leading-none">
+              ichi
             </span>
+            <div className="flex items-center gap-2 pt-0.5 lg:pt-1">
+              <div className="h-[2px] w-4 lg:w-6 bg-accent" />
+              <span className="text-[0.6rem] lg:text-sm font-sans font-bold uppercase tracking-[0.5em] text-wood-light">
+                spa
+              </span>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+
+        {/* Mobile-only Book Now or Secondary toggle could go here, but user wants flags + menu together on line 2 */}
+      </div>
       
-      {/* Desktop Links */}
+      {/* Desktop Links - Hidden on Mobile, and since parents are flex-col on mobile, they don't affect Line 2 */}
       <div className="hidden space-x-1 lg:flex items-center">
         {navLinks.map((item, idx) => {
           const active = isActive(item);
@@ -141,9 +145,9 @@ const Navbar = () => {
         })}
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between w-full lg:w-auto gap-3 lg:gap-3">
         {/* Language Flags */}
-        <div className="flex items-center gap-2 mr-1">
+        <div className={`flex items-center gap-2 lg:gap-2 overflow-x-auto transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto' : 'opacity-100'}`}>
           <FlagButton lng="vi" countryCode="vn" title="Tiếng Việt" />
           <FlagButton lng="en" countryCode="us" title="English" />
           <FlagButton lng="jp" countryCode="jp" title="日本語" />
@@ -151,26 +155,28 @@ const Navbar = () => {
           <FlagButton lng="zh" countryCode="cn" title="中文" />
         </div>
 
-        <a 
-          href="/#liên hệ"
-          onClick={(e) => {
-            if (location.pathname === '/') {
-              e.preventDefault();
-              handleScroll('/#liên hệ');
-            }
-          }}
-          className="hidden sm:block px-5 py-2.5 text-[0.7rem] uppercase tracking-[0.12em] text-white transition-all rounded-[2px] bg-wood-dark hover:bg-wood shadow-sm active:scale-95 whitespace-nowrap"
-        >
-          {t('nav.book_now')}
-        </a>
-        
-        {/* Mobile Menu Toggle */}
-        <button 
-          className="p-2 lg:hidden text-wood hover:bg-be-light rounded-full transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        <div className="flex items-center gap-3">
+          <a 
+            href="/#liên hệ"
+            onClick={(e) => {
+              if (location.pathname === '/') {
+                e.preventDefault();
+                handleScroll('/#liên hệ');
+              }
+            }}
+            className="hidden sm:block px-4 lg:px-5 py-2 lg:py-2.5 text-[0.6rem] lg:text-[0.7rem] uppercase tracking-[0.12em] text-white transition-all rounded-[2px] bg-wood-dark hover:bg-wood shadow-sm active:scale-95 whitespace-nowrap"
+          >
+            {t('nav.book_now')}
+          </a>
+          
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="p-1.5 lg:p-2 lg:hidden text-wood hover:bg-be-light rounded-full transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} lg:size={26} /> : <Menu size={24} lg:size={26} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Drawer */}

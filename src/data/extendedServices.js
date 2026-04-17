@@ -143,7 +143,7 @@ export const extendedServices = [
   },
   {
     id: 'body-intensive-120',
-    category: { vi: 'Phục Hồi Chuyên Sâu', en: 'Intensive Recovery', jp: '集中回復', ko: '집중 회복', zh: '深度恢复' },
+    category: { vi: 'Liệu Trình Phục Hồi Chuyên Sâu', en: 'Intensive Recovery', jp: '集中回復', ko: '집중 회복', zh: '深度恢复' },
     name: { vi: "Dưỡng sinh toàn diện 120’", en: "Full Wellness 120m", jp: "総合ウェルネス 120分", ko: "종합 웰니스 120분", zh: "全效养生 120分钟" },
     duration: { vi: "120 phút", en: "120 min", jp: "120 分", ko: "120 분", zh: "120 分钟" },
     price: { vi: "860.000", en: "860k", jp: "860k", ko: "860k", zh: "860k" },
@@ -168,7 +168,7 @@ export const extendedServices = [
   // II. Liệu Trình CỔ VAI GÁY
   {
     id: 'neck-shoulder-intensive',
-    category: { vi: 'Cổ Vai Gáy', en: 'Neck & Shoulder', jp: '首・肩', ko: '목과 어깨', zh: '颈肩理疗' },
+    category: { vi: 'Liệu Trình Cổ Vai Gáy', en: 'Neck & Shoulder', jp: '首・肩', ko: '목과 어깨', zh: '颈肩理疗' },
     name: { vi: "Liệu Trình chuyên sâu", en: "Intensive Therapy", jp: "集中セラピー", ko: "집중 테라피", zh: "深度护理" },
     duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
     price: { vi: "490.000 / 590.000", en: "490k / 590k", jp: "490k / 590k", ko: "490k / 590k", zh: "490k / 590k" },
@@ -331,7 +331,7 @@ export const extendedServices = [
       ko: ["목 피로 완화", "부드러운 머릿결", "편안한 휴식"],
       zh: ["缓解颈部疲劳", "顺滑发质", "舒适"]
     },
-    images: ["/1010574840257195780.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
+    images: ["/goidauduongsinh1.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
   },
   {
     id: 'hair-pro',
@@ -354,6 +354,6 @@ export const extendedServices = [
       ko: ["근육 뭉침 해소", "에너지 회복", "집중 헤어 케어"],
       zh: ["消除僵硬", "恢复能量", "深度护发"]
     },
-    images: ["/1612625643177023838 (1).jpg", "/2842425705773877145.jpg", "/1293911440826339391.jpg"]
+    images: ["/goidauduongsinh1.jpg", "/2842425705773877145.jpg", "/1293911440826339391.jpg"]
   }
 ];

@@ -30,7 +30,7 @@ i18n
             title_part1: "Nơi bạn",
             title_part2: "tìm lại",
             title_italic: "chính mình",
-            desc: "Ichi Spa mang đến trải nghiệm chăm sóc sức khỏe toàn diện, nơi thiên nhiên và nghệ thuật trị liệu hoà quyện để nuôi dưỡng cả thân lẫn tâm.",
+            desc: "Ichi Spa mang đến trải nghiệm chăm sóc sức khỏe toàn diện, nơi thiên nhiên và nghệ thuật liệu trình hoà quyện để nuôi dưỡng cả thân lẫn tâm.",
             btn_explore: "Khám phá dịch vụ",
             btn_prices: "Bảng giá"
           },
@@ -91,12 +91,12 @@ i18n
           menu_page: {
             subtitle: "Healing rituals",
             title: "Menu Dịch Vụ",
-            desc: "Mời bạn khám phá bản giao hưởng của thảo mộc và kỹ nghệ trị liệu, nơi mỗi liệu trình là một hành trình tái sinh kỳ diệu.",
+            desc: "Mời bạn khám phá bản giao hưởng của thảo mộc và kỹ nghệ liệu trình, nơi mỗi liệu trình là một hành trình tái sinh kỳ diệu.",
             back: "Quay lại Menu"
           },
           menu: {
             "body-aroma": {
-              name: "Massage Trị Liệu",
+              name: "Massage Liệu Trình",
               desc: "Phục hồi cơ thể với kỹ thuật massage truyền thống kết hợp tinh dầu thiên nhiên cao cấp."
             },
             "facial-basic": {
