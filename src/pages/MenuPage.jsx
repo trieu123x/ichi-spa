@@ -60,7 +60,7 @@ const MenuPage = () => {
                 <span className="w-4 h-px bg-accent opacity-50"></span>
                 {service.category[currentLang]}
               </div>
-              <h3 className="text-lg sm:text-2xl font-semibold font-serif text-wood-dark mb-2 sm:mb-4 group-hover:text-wood transition-colors">{service.name[currentLang]}</h3>
+              <h3 className="text-3xl sm:text-3xl font-normal font-cursive text-wood-dark mb-2 sm:mb-4 group-hover:text-wood transition-colors">{service.name[currentLang]}</h3>
               
               <div className="flex justify-between items-center text-[0.8rem] text-text-mid opacity-70 mb-4 border-t border-line/50 pt-4">
                  <div className="flex items-center gap-1.5">

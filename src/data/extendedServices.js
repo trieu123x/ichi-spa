@@ -1,12 +1,12 @@
 export const extendedServices = [
-  // I. Liệu Trình TOÀN THÂN
+  // I. Liệu trình tái tạo năng lượng toàn thân
   {
     id: 'body-aroma',
-    category: { vi: 'Liệu Trình Toàn Thân', en: 'Body Therapy', jp: 'ボディセラピー', ko: '바디 테라피', zh: '全身理疗' },
+    category: { vi: 'Liệu trình tái tạo năng lượng toàn thân', en: 'Full Body Energy Regeneration', jp: '全身エネルギー再生', ko: '전신 에너지 재생', zh: '全身能量再生理疗' },
     name: { vi: "Aroma Massage", en: "Aroma Massage", jp: "アロママッサージ", ko: "아로마 마사지", zh: "精油按摩" },
     duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
     price: { vi: "450.000 / 550.000", en: "450k / 550k", jp: "450k / 550k", ko: "450k / 550k", zh: "450k / 550k" },
-    description: { vi: "Thư giãn nhẹ nhàng với tinh dầu thiên nhiên.", en: "Gentle relaxation with natural oils.", jp: "天然オイルによる穏やかなリラクゼーション。", ko: "천연 에센셜 오일을 이용한 부드러운 휴식。", zh: "使用天然精油温和放松。" },
+    description: { vi: "Thư giãn nhẹ nhàng với tinh dầu thiên nhiên, giúp cơ thể thả lỏng và tinh thần dịu lại.", en: "Gentle relaxation with natural oils to loosen the body and calm the spirit.", jp: "天然オイルによる穏やかなリラクゼーション。", ko: "천연 에센셜 오일을 이용한 부드러운 휴식。", zh: "使用天然精油温和放松。" },
     longDescription: {
       vi: "Liệu pháp sử dụng tinh dầu hữu cơ kết hợp kỹ thuật massage vuốt miết mềm mại, giúp tinh thần dịu lại và xua tan mệt mỏi.",
       en: "Therapy using organic oils combined with gentle massage techniques to calm the mind and banish fatigue.",
@@ -25,11 +25,11 @@ export const extendedServices = [
   },
   {
     id: 'body-hotstone',
-    category: { vi: 'Liệu Trình Toàn Thân', en: 'Body Therapy', jp: 'ボディセラピー', ko: '바디 테라피', zh: '全身理疗' },
-    name: { vi: "Liệu Trình Đá Nóng", en: "Hot Stone Therapy", jp: "ホットストーンセラピー", ko: "핫스톤 테라피", zh: "热石理疗" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
+    category: { vi: 'Liệu trình tái tạo năng lượng toàn thân', en: 'Full Body Energy Regeneration', jp: '全身エネルギー再生', ko: '전신 에너지 재생', zh: '全身能量再生理疗' },
+    name: { vi: "Phục hồi toàn thân với đá khoáng", en: "Full Body Mineral Stone Recovery", jp: "ミネラルストーン全身回復", ko: "미네랄 스톤 전신 회복", zh: "矿石全身修复理疗" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
     price: { vi: "480.000 / 580.000", en: "480k / 580k", jp: "480k / 580k", ko: "480k / 580k", zh: "480k / 580k" },
-    description: { vi: "Nhiệt ấm từ đá giúp làm mềm cơ và phục hồi.", en: "Warm stones soften muscles and aid recovery.", jp: "温かい石が筋肉を和らげ、回復を助けます。", ko: "따뜻한 돌의 열기가 근육을 이완시키고 회복을 돕습니다。", zh: "石头的温热有助于软化肌肉并促进恢复。" },
+    description: { vi: "Nhiệt ấm giúp làm mềm cơ và hỗ trợ cơ thể phục hồi sau những ngày căng thẳng.", en: "Warm heat helps soften muscles and supports recovery.", jp: "温かい石が筋肉を和らげ、回復を助けます。", ko: "따뜻한 돌의 열기가 근육을 이완시키고 회복을 돕습니다。", zh: "石头的温热有助于软化肌肉并促进恢复。" },
     longDescription: {
       vi: "Sử dụng những viên đá núi lửa giữ nhiệt, tác động sâu vào các huyệt đạo để giải phóng năng lượng tắc nghẽn.",
       en: "Uses volcanic stones that retain heat, acting deeply on acupoints to release blocked energy.",
@@ -48,11 +48,11 @@ export const extendedServices = [
   },
   {
     id: 'body-herbal',
-    category: { vi: 'Liệu Trình Toàn Thân', en: 'Body Therapy', jp: 'ボディセラピー', ko: '바디 테라피', zh: '全身理疗' },
-    name: { vi: "Liệu Trình Bóng Thảo Dược", en: "Herbal Ball Therapy", jp: "ハーバルボールセラピー", ko: "허브볼 테라피", zh: "草本球理疗" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
+    category: { vi: 'Liệu trình tái tạo năng lượng toàn thân', en: 'Full Body Energy Regeneration', jp: '全身エネルギー再生', ko: '전신 에너지 재생', zh: '全身能量再生理疗' },
+    name: { vi: "Phục hồi toàn thân với bóng thảo dược", en: "Full Body Herbal Ball Recovery", jp: "ハーバルボール全身回復", ko: "허브볼 전신 회복", zh: "草本球全身修复理疗" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
     price: { vi: "520.000 / 610.000", en: "520k / 610k", jp: "520k / 610k", ko: "520k / 610k", zh: "520k / 610k" },
-    description: { vi: "Hơi ấm thảo dược lan sâu vào cơ thể.", en: "Herbal warmth penetrates deep into the body.", jp: "ハーブの温もりが体の深部まで浸透します。", ko: "허브의 온기가 몸속 깊숙이 스며듭니다。", zh: "草本温热深层渗透进入身体。" },
+    description: { vi: "Hơi ấm thảo dược lan sâu, phù hợp với cơ thể đau mỏi kéo dài.", en: "Deep herbal warmth, perfect for lingering body aches.", jp: "ハーブの温もりが体の深部まで浸透します。", ko: "허브의 온기가 몸속 깊숙이 스며듭니다。", zh: "草本温热深层渗透进入身体。" },
     longDescription: {
       vi: "Các túi thảo dược được hấp nóng và ấn nhẹ trực tiếp lên cơ thể, giúp dưỡng chất thảo mộc thẩm thấu sâu.",
       en: "Steamed herbal bags are gently pressed directly onto the body, allowing herbal nutrients to penetrate deeply.",
@@ -72,11 +72,11 @@ export const extendedServices = [
   {
     id: 'signature-ngai',
     category: { vi: 'Signature', en: 'Signature', jp: 'シグネチャー', ko: '시그니처', zh: '招牌推荐' },
-    name: { vi: "Liệu Trình Ngải Đặc Biệt", en: "Special Moxa Therapy", jp: "スペシャルもぐさセラピー", ko: "특별 쑥뜸 테라피", zh: "特色艾灸理疗" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
+    name: { vi: "Ngải Đặc Biệt ", en: "Special Moxa ", jp: "スペシャルもぐさ", ko: "특별 쑥뜸", zh: "特色艾灸" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
     price: { vi: "599.000 / 699.000", en: "599k / 699k", jp: "599k / 699k", ko: "599k / 699k", zh: "599k / 699k" },
     badge: "HOT",
-    description: { vi: "Lựa chọn phục hồi ổn định thay vì chỉ thư giãn tạm thời.", en: "Stable recovery instead of temporary relaxation.", jp: "一時的なリラックスではなく、安定した回復のために。", ko: "일시적인 휴식이 아닌 체계적인 회복을 위한 선택。", zh: "选择稳定恢复，而非暂时放松。" },
+    description: { vi: " Lựa chọn phù hợp nếu bạn muốn phục hồi ổn định thay vì chỉ thư giãn tạm thời.", en: "Ideal for stable recovery rather than temporary relaxation.", jp: "一時的なリラックスではなく、安定した回復のために。", ko: "일시적인 휴식이 아닌 체계적인 회복을 위한 선택。", zh: "选择稳定恢复，而非暂时放松。" },
     longDescription: {
       vi: "Hơi ấm từ điếu ngải giúp làm ấm sâu và hỗ trợ lưu thông tốt hơn, đặc biệt giúp giải toả căng thẳng và đau mỏi toàn thân.",
       en: "Warmth from moxa stick helps warm deep and supports better circulation, especially relieving stress and full body aches.",
@@ -96,14 +96,14 @@ export const extendedServices = [
   {
     id: 'signature-salt',
     category: { vi: 'Signature', en: 'Signature', jp: 'シグネチャー', ko: '시그니처', zh: '招牌推荐' },
-    name: { vi: "Muối Phục Dược", en: "Recovery Salt Therapy", jp: "リカバリーソルトセラピー", ko: "리커버리 솔트 테라피", zh: "药盐修复" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
+    name: { vi: "Muối Thảo Dược ", en: "Herbal Salt ", jp: "ハーバルソルト", ko: "허브 소금 ", zh: "草本药盐" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
     price: { vi: "599.000 / 699.000", en: "599k / 699k", jp: "599k / 699k", ko: "599k / 699k", zh: "599k / 699k" },
-    badge: "95% back",
-    description: { vi: "Muối sao thảo mộc đặc trị đau mỏi vai gáy.", en: "Herb salt therapy for neck and shoulder pain.", jp: "首や肩の痛みのためのハーブ塩セラピー。", ko: "목과 어깨 통증 완화를 위한 허브 소금 테라피。", zh: "炒制草本盐，专治颈肩酸痛。" },
+    badge: "Our Signature Services",
+    description: { vi: " Lựa chọn phù hợp cho người bị bó cơ vai gáy - lưng, tê bì chân tay.", en: "Ideal for neck, shoulder, back tension and limb numbness.", jp: "首や肩の痛みのためのハーブ塩セラピー。", ko: "목과 어깨 통증 완화를 위한 허브 소금 테라피。", zh: "炒制草本盐，专治颈肩酸痛。" },
     longDescription: {
-      vi: "Muối sao thảo mộc thủ công giữ nhiệt bền bỉ để làm tan các bó cơ xơ cứng. Giải pháp đặc trị cho người ngồi lâu, ít vận động.",
-      en: "Hand-roasted herb salts retain heat persistently to dissolve stiff muscle bundles. A specialized solution for desk workers.",
+      vi: "Sức nóng từ muối thảo dược sao thủ công giúp làm tan các khối cơ xơ cứng và giải phóng các điểm tắc nghẽn tức thì. Giải pháp đặc trị cho người ngồi lâu, ít vận động.",
+      en: "Heat from hand-roasted herbal salt dissolves stiff muscles and releases blockages instantly. A specialized solution for desk workers.",
       jp: "手作りのハーブ塩が熱を保持し、凝り固まった筋肉をほぐします。デスクワークの方への専門的なソリューション。",
       ko: "수제 허브 소금이 열을 오랫동안 유지하여 뭉친 근육을 풀어줍니다. 장시간 앉아 있는 분들을 위한 맞춤형 솔루션입니다。",
       zh: "手工炒制草本盐，能够持久蓄热，融化僵硬的肌束。专为久坐、运动量少的人士设计的理疗方案。"
@@ -120,16 +120,16 @@ export const extendedServices = [
   {
     id: 'signature-mud',
     category: { vi: 'Signature', en: 'Signature', jp: 'シグネチャー', ko: '시그니처', zh: '招牌推荐' },
-    name: { vi: "Bùn Cứu Dưỡng Sinh", en: "Nutritional Mud Healing", jp: "養生泥セラピー", ko: "영양 머드 힐링", zh: "养生泥灸" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
+    name: { vi: "Bùn Cứu Dưỡng Sinh ", en: "Nutritional Mud ", jp: "養生泥", ko: "영양 머드", zh: "养生泥灸" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
     price: { vi: "599.000 / 699.000", en: "599k / 699k", jp: "599k / 699k", ko: "599k / 699k", zh: "599k / 699k" },
     badge: "Must try",
-    description: { vi: "Trục xuất hàn khí và độc tố ra khỏi xương khớp.", en: "Expel cold and toxins from joints.", jp: "関節から冷えや毒素を排出します。", ko: "관절에서 냉기와 독소를 배출합니다。", zh: "排除骨骼关节中的寒气和毒素。" },
+    description: { vi: " Lựa chọn phù hợp khi cơ thể lạnh, ngủ không sâu hoặc cần phục hồi nhẹ nhàng.", en: "Perfect for cold bodies or poor sleep.", jp: "関節から冷えや毒素を排出します。", ko: "관절에서 냉기와 독소를 배출합니다。", zh: "排除骨骼关节中的寒气和毒素。" },
     longDescription: {
-      vi: "Lớp bùn dược tính đóng vai trò như máy hút để trục xuất hàn khí. Làm ấm vùng lõi cơ thể, giải phóng áp lực tại các khớp.",
-      en: "Therapeutic mud layer acts as a vacuum to expel cold. Warms the body core and releases joint pressure.",
+      vi: "Lớp bùn dưỡng sinh ủ nóng giữ nhiệt sâu, giúp làm ấm cơ thể, hỗ trợ thải độc và đưa cơ thể về trạng thái cân bằng.",
+      en: "Warm therapeutic mud provides deep heat, detoxifies, and restores balance to the body core.",
       jp: "薬用泥が冷えを排出する吸引機のように働きます。体の芯を温め、関節の圧力を解放します。",
-      ko: "약용 머드층이 진공 흡입기처럼 작용하여 냉기를 배출합니다. 몸의 심부를 따뜻하게 하고 관절의 압력을 풀어줍니다。",
+      ko: "약용 머드층이 진공 흡입기처럼 작용하여 냉기를 배출합니다. 몸의 심부를 따뜻하게 하고 관절의 압력을 풀어줍니다.",
       zh: "药泥层如同一台抽吸机，排出寒气。温暖身体核心，释放关节压力。"
     },
     benefits: {
@@ -143,14 +143,14 @@ export const extendedServices = [
   },
   {
     id: 'body-intensive-120',
-    category: { vi: 'Liệu Trình Phục Hồi Chuyên Sâu', en: 'Intensive Recovery', jp: '集中回復', ko: '집중 회복', zh: '深度恢复' },
-    name: { vi: "Dưỡng sinh toàn diện 120’", en: "Full Wellness 120m", jp: "総合ウェルネス 120分", ko: "종합 웰니스 120분", zh: "全效养生 120分钟" },
-    duration: { vi: "120 phút", en: "120 min", jp: "120 分", ko: "120 분", zh: "120 分钟" },
-    price: { vi: "860.000", en: "860k", jp: "860k", ko: "860k", zh: "860k" },
-    description: { vi: "Nghi thức trọn vẹn nhất tại ICHI SPA.", en: "The most complete ritual at ICHI SPA.", jp: "ICHI SPAで最も完全な儀式。", ko: "ICHI SPA에서 가장 완벽한 리추얼。", zh: "ICHI SPA 最完善的养生仪式。" },
+    category: { vi: 'LIỆU TRÌNH PHỤC HỒI CHUYÊN SÂU 120’', en: '🌿 INTENSIVE RECOVERY 120m', jp: '🌿 集中集中回復 120分', ko: '🌿 집중 회복 120분', zh: '🌿 120分钟深度恢复' },
+    name: { vi: "Nghi thức dưỡng sinh toàn diện", en: "Full Wellness Ritual", jp: "総合ウェルネス儀式", ko: "종합 웰니스 리추얼", zh: "全效养生仪式" },
+    duration: { vi: "120 phút", en: "120 min", jp: "120 分", ko: "120 分", zh: "120 分钟" },
+    price: { vi: "780.000", en: "780k", jp: "780k", ko: "780k", zh: "780k" },
+    description: { vi: " Phù hợp khi cơ thể đau mỏi kéo dài hoặc cần chăm sóc toàn diện.", en: "Ideal for chronic aches or comprehensive care.", jp: "ICHI SPAで最も完全な儀式。", ko: "ICHI SPA에서 가장 완벽한 리추얼。", zh: "ICHI SPA 最完善的养生仪式。" },
     longDescription: {
-      vi: "Kết hợp Muối Phục Dược và ngải giữ nhiệt sâu, giúp cơ thể được làm ấm đủ lâu để thả lỏng và phục hồi rõ rệt.",
-      en: "Combines Recovery Salt and Moxa for deep heat, allowing the body to relax and recover visibly.",
+      vi: "Kết hợp muối thảo dược và trị liệu tập trung vùng căng cứng chính, giúp cơ thể được làm ấm đủ lâu để thả lỏng và phục hồi rõ rệt.",
+      en: "Combines herbal salt and focused therapy for key stiff areas, allowing the body to warm and recover visibly.",
       jp: "リカバリーソルトともぐさを組み合わせた深部温熱で、体がリラックスし、目に見えて回復します。",
       ko: "리커버리 솔트와 쑥뜸의 심부 온열을 결합하여 몸을 충분히 이완시키고 눈에 띄는 회복을 돕습니다。",
       zh: "结合修复盐和艾灸，深度蓄热，使身体充分温暖，从而放松并显著恢复。"
@@ -164,18 +164,16 @@ export const extendedServices = [
     },
     images: ["/1612625643177023838.jpg", "/1293911440826339391.jpg", "/1010574840257195780.jpg"]
   },
-
-  // II. Liệu Trình CỔ VAI GÁY
   {
     id: 'neck-shoulder-intensive',
-    category: { vi: 'Liệu Trình Cổ Vai Gáy', en: 'Neck & Shoulder', jp: '首・肩', ko: '목과 어깨', zh: '颈肩理疗' },
-    name: { vi: "Liệu Trình chuyên sâu", en: "Intensive Therapy", jp: "集中セラピー", ko: "집중 테라피", zh: "深度护理" },
-    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
-    price: { vi: "490.000 / 590.000", en: "490k / 590k", jp: "490k / 590k", ko: "490k / 590k", zh: "490k / 590k" },
-    description: { vi: "Giải phóng điểm căng cứng vùng vai gáy.", en: "Release tension in neck & shoulders.", jp: "首と肩の緊張を和らげます。", ko: "목과 어깨의 긴장을 풀어줍니다。", zh: "释放颈肩部位的僵硬点。" },
+    category: { vi: 'Cổ vai gáy chuyên sâu', en: 'Intensive Neck & Shoulder', jp: '首・肩集中ケア', ko: '목/어깨 집중 케어', zh: '深度颈肩理疗' },
+    name: { vi: "Liệu trình Cổ Vai Gáy Chuyên Sâu", en: "Intensive Therapy", jp: "集中セラピー", ko: "집중 테라피", zh: "深度护理" },
+    duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 分", zh: "60 / 90 分钟" },
+    price: { vi: "490.000 / 690.000", en: "490k / 690k", jp: "490k / 690k", ko: "490k / 690k", zh: "490k / 690k" },
+    description: { vi: "(Nhóm được khách văn phòng lựa chọn nhiều)", en: "High chosen by office workers.", jp: "首と肩の緊張を和らげます。", ko: "목과 어깨의 긴장을 풀어줍니다。", zh: "释放颈肩部位的僵硬点。" },
     longDescription: {
-      vi: "Tập trung vào vùng bị bó cơ do ngồi máy tính lâu, khôi phục sự linh hoạt cho toàn bộ vùng lưng trên.",
-      en: "Focuses on muscle tension caused by long computer use, restoring flexibility to the upper back.",
+      vi: "Tập trung giải phóng các điểm căng cứng vùng cổ – vai – lưng trên. Phù hợp cho dân văn phòng và những người ít vận động.",
+      en: "Focuses on releasing tension in neck, shoulders, and upper back. Perfect for office workers and sedentary individuals.",
       jp: "長時間のパソコン使用による筋肉の緊張に焦点を当て、背中上部の柔軟性を取り戻します。",
       ko: "장시간 컴퓨터 사용으로 인한 근육 뭉침을 집중적으로 관리하여 상체 유연성을 회복시켜 줍니다。",
       zh: "针对因长时间用电脑而导致的肌束紧绷，恢复整个上背部的灵活性。"
@@ -190,11 +188,11 @@ export const extendedServices = [
     images: ["/1010574840257195780.jpg", "/1612625643177023838.jpg", "/1293911440826339391.jpg"]
   },
 
-  // III. Liệu Trình VÙNG CHÂN
+  // III. Liệu trình phục hồi chân
   {
     id: 'foot-hotstone',
-    category: { vi: 'Liệu Trình Chân', en: 'Foot Therapy', jp: 'フットセラピー', ko: '풋 테라피', zh: '足部理疗' },
-    name: { vi: "Massage chân với đá nóng", en: "Foot Hot Stone", jp: "フットホットストーン", ko: "발 핫스톤 마사지", zh: "足部热石理疗" },
+    category: { vi: 'Liệu trình phục hồi chân', en: 'Foot Recovery Therapy', jp: 'フット回復セラピー', ko: '발 회복 테라피', zh: '足部修复理疗' },
+    name: { vi: "Phục hồi chân với đá khoáng", en: "Mineral Stone Foot Recovery", jp: "ミネラルストーン・フット回復", ko: "미네랄 스톤 발 회복", zh: "足部矿石修复理疗" },
     duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
     price: { vi: "390.000 / 490.000", en: "390k / 490k", jp: "390k / 490k", ko: "390k / 490k", zh: "390k / 490k" },
     description: { vi: "Làm ấm bàn chân, giảm cảm giác nặng nề.", en: "Warms feet, reduces heaviness.", jp: "足を温め、重さを軽減します。", ko: "발을 따뜻하게 하여 무거운 느낌을 줄여줍니다。", zh: "温暖足部，减轻沉重感。" },
@@ -216,8 +214,8 @@ export const extendedServices = [
   },
   {
     id: 'foot-herbal',
-    category: { vi: 'Liệu Trình Chân', en: 'Foot Therapy', jp: 'フットセラピー', ko: '풋 테라피', zh: '足部理疗' },
-    name: { vi: "Bóng Thảo Dược Vùng Chân", en: "Foot Herbal Ball", jp: "フットハーバルボール", ko: "발 허브볼 테라피", zh: "足部草本球理疗" },
+    category: { vi: 'Liệu trình phục hồi chân', en: 'Foot Recovery Therapy', jp: 'フット回復セラピー', ko: '발 회복 테라피', zh: '足部修复理疗' },
+    name: { vi: "Phục hồi chân với bóng thảo dược", en: "Herbal Ball Foot Recovery", jp: "ハーバルボール・フット回復", ko: "허브볼 발 회복", zh: "足部草本球修复理疗" },
     duration: { vi: "60 / 90 phút", en: "60 / 90 min", jp: "60 / 90 分", ko: "60 / 90 분", zh: "60 / 90 分钟" },
     price: { vi: "460.000 / 550.000", en: "460k / 550k", jp: "460k / 550k", ko: "460k / 550k", zh: "460k / 550k" },
     description: { vi: "Hơi ấm thảo dược từ lòng bàn chân.", en: "Herbal warmth from the soles.", jp: "足裏から伝わるハーブの温もり。", ko: "발바닥에서 전해지는 허브의 온기。", zh: "脚底感受草本温热。" },
@@ -308,7 +306,7 @@ export const extendedServices = [
       ko: ["비듬 제거", "부드러운 머릿결", "상쾌한 기분"],
       zh: ["清屑", "顺滑发质", "头部轻盈"]
     },
-    images: ["/goidauduongsinh1.jpg", "/1010574840257195780.jpg", "/1293911440826339391.jpg"]
+    images: ["/goidauduongsinh1.jpg", "/goidauduongsinh2.jpg", "/goidauduongsinh3.jpg"]
   },
   {
     id: 'hair-neck',
@@ -331,7 +329,7 @@ export const extendedServices = [
       ko: ["목 피로 완화", "부드러운 머릿결", "편안한 휴식"],
       zh: ["缓解颈部疲劳", "顺滑发质", "舒适"]
     },
-    images: ["/goidauduongsinh1.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
+    images: ["/goidauduongsinh2.jpg", "/goidauduongsinh3.jpg", "/goidauduongsinh1.jpg"]
   },
   {
     id: 'hair-pro',
@@ -354,6 +352,6 @@ export const extendedServices = [
       ko: ["근육 뭉침 해소", "에너지 회복", "집중 헤어 케어"],
       zh: ["消除僵硬", "恢复能量", "深度护发"]
     },
-    images: ["/goidauduongsinh1.jpg", "/2842425705773877145.jpg", "/1293911440826339391.jpg"]
+    images: ["/goidauduongsinh3.jpg", "/goidauduongsinh2.jpg", "/goidauduongsinh1.jpg"]
   }
 ];

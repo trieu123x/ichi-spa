@@ -1,10 +1,10 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 @theme {
   --font-serif: "Italiana", serif;
   --font-sans: "Montserrat", sans-serif;
   --font-brand: "Playwrite IE", cursive;
+  --font-cursive: "Great Vibes", cursive;
 
   --color-wood: #7B5C3E;
   --color-wood-light: #A07850;
