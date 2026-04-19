@@ -164,7 +164,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 flex flex-col lg:flex-row items-center lg:justify-between px-6 py-3 lg:py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12 gap-y-3 lg:gap-y-0">
-      <div className="flex items-center justify-between w-full lg:w-auto">
+      <div className="flex items-center justify-between w-full lg:flex-1 lg:w-auto">
         <Link to="/" className="group relative flex items-center gap-3 hover:opacity-90 transition-opacity">
           <motion.div 
             whileHover={{ rotate: -10, scale: 1.1 }}
@@ -193,7 +193,7 @@ const Navbar = () => {
       </div>
       
       {/* Desktop Links */}
-      <div className="hidden space-x-1 lg:flex items-center">
+      <div className="hidden space-x-1 lg:flex lg:flex-1 items-center justify-center">
         {navLinks.map((item, idx) => {
           const active = isActive(item);
           const linkClasses = `px-3 py-2 text-[0.7rem] uppercase tracking-[0.12em] transition-all duration-300 rounded-sm font-medium ${
@@ -224,7 +224,7 @@ const Navbar = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-between w-full lg:w-auto gap-4 lg:gap-6">
+      <div className="flex items-center justify-between w-full lg:flex-1 lg:w-auto gap-4 lg:gap-6 lg:justify-end">
         {/* Language Dropdown - Hidden on Mobile Toggle */}
         <div className={`transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto' : 'opacity-100'}`}>
           <LanguageSelector />

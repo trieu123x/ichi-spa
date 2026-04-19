@@ -21,7 +21,7 @@ export const extendedServices = [
       ko: ["스트레스 해소", "피부 연화", "숙면 도움"],
       zh: ["缓解压力", "使肌肤柔软", "改善睡眠"]
     },
-    images: ["/aroma.jpg", "/1293911440826339391.jpg", "/1612625643177023838.jpg"]
+    images: ["/aroma.jpg"]
   },
   {
     id: 'body-hotstone',
@@ -41,10 +41,10 @@ export const extendedServices = [
       vi: ["Giãn cơ", "Thải độc", "Giảm đau khớp"],
       en: ["Muscle relaxation", "Detoxification", "Joint pain relief"],
       jp: ["筋肉の弛緩", "デトックス", "関節痛の軽減"],
-      ko: ["근육 이완", "독소 배출", "관절통 완화"],
+      ko: ["근육 이완", "독소 배출", "관절통 완화"],  
       zh: ["放松肌肉", "排毒", "缓解关节疼痛"]
     },
-    images: ["/1293911440826339391.jpg", "/1612625643177023838.jpg", "/1010574840257195780.jpg"]
+    images: ["/nghithucduongsinhtoandien.jpg"]
   },
   {
     id: 'body-herbal',
@@ -67,7 +67,7 @@ export const extendedServices = [
       ko: ["체온 상승", "심신 안정 향기", "통증 완화"],
       zh: ["温暖身体", "芬芳放松", "缓解酸痛"]
     },
-    images: ["/bongthaoduoc1.jpg", "/1010574840257195780.jpg", "/1293911440826339391.jpg"]
+    images: ["/bongthaoduoc1.jpg", "/bongthaoduoc2.jpg"]
   },
   {
     id: 'signature-ngai',
@@ -91,7 +91,7 @@ export const extendedServices = [
       ko: ["기혈 순환", "심부 온열", "통증 완화"],
       zh: ["气血流通", "深层加温", "减少酸痛"]
     },
-    images: ["/1612625643177023838 (1).jpg", "/2842425705773877145.jpg", "/1612625643177023838.jpg"]
+    images: ["/1612625643177023838 (1).jpg", "/2842425705773877145.jpg"]
   },
   {
     id: 'signature-salt',
@@ -115,7 +115,7 @@ export const extendedServices = [
       ko: ["근육 뭉침 해소", "경락 소통", "즉각적인 편안함"],
       zh: ["融化肌束", "疏通经络", "即刻轻松"]
     },
-    images: ["/1293911440826339391.jpg", "/1010574840257195780.jpg", "/1612625643177023838.jpg"]
+    images: ["/muoithaoduoc1.jpg"]
   },
   {
     id: 'signature-mud',
@@ -139,7 +139,7 @@ export const extendedServices = [
       ko: ["관절 해독", "심부 온열", "수면 개선"],
       zh: ["骨关节排毒", "温暖核心", "改善睡眠"]
     },
-    images: ["/1612625643177023838 (1).jpg", "/2842425705773877145.jpg", "/1293911440826339391.jpg"]
+    images: ["/buncuuduongsinh.jpg", "/2842425705773877145.jpg"]
   },
   {
     id: 'body-intensive-120',
@@ -162,7 +162,7 @@ export const extendedServices = [
       ko: ["심층 회복", "완벽한 휴식", "에너지 재생"],
       zh: ["深层恢复", "绝对放松", "能量再生"]
     },
-    images: ["/1612625643177023838.jpg", "/1293911440826339391.jpg", "/1010574840257195780.jpg"]
+    images: ["/nghithucduongsinhtoandien.jpg"]
   },
   {
     id: 'neck-shoulder-intensive',
@@ -185,7 +185,7 @@ export const extendedServices = [
       ko: ["목/어깨 통증 완화", "저림 증상 해소", "유연성 증가"],
       zh: ["减轻颈肩疼痛", "消除麻木疲劳", "增加灵活性"]
     },
-    images: ["/1010574840257195780.jpg", "/1612625643177023838.jpg", "/1293911440826339391.jpg"]
+    images: ["/covaigay1.jpg", "/covaigay2.jpg"]
   },
 
   // III. Liệu trình phục hồi chân
@@ -210,7 +210,7 @@ export const extendedServices = [
       ko: ["발의 가벼움", "피로 해소", "숙면 유도"],
       zh: ["消除脚部沉重", "减轻麻木疲劳", "助眠"]
     },
-    images: ["/chanvoidanong1.jpg", "/chanvoidanong2.jpg", "/chanvoidanong3.jpg"]
+    images: ["/chanvoidanong1.jpg", "/chanvoidanong2.jpg"]
   },
   {
     id: 'foot-herbal',
@@ -233,7 +233,7 @@ export const extendedServices = [
       ko: ["발의 온열", "근육 이완", "발 독소 배출"],
       zh: ["温暖足部", "软化肌束", "脚部排毒"]
     },
-    images: ["/1612625643177023838.jpg", "/1293911440826339391.jpg", "/1010574840257195780.jpg"]
+    images: ["/chanvoidanong3.jpg"]
   },
 
   // V. CHĂM SÓC DA MẶT
@@ -258,7 +258,7 @@ export const extendedServices = [
       ko: ["피부 청결", "얼굴 긴장 완화", "피부 톤 개선"],
       zh: ["清洁肌肤", "面部放松", "提亮肤色"]
     },
-    images: ["/chamsocdamat.jpg", "/1010574840257195780.jpg", "/1612625643177023838.jpg"]
+    images: ["/chamsocdamat.jpg"]
   },
   {
     id: 'facial-intensive',
@@ -281,7 +281,7 @@ export const extendedServices = [
       ko: ["보습 광채", "피부 재생", "탄력 강화"],
       zh: ["滋润", "年轻化", "紧致有光泽"]
     },
-    images: ["/chamsocdamatchuyensau1.jpg", "/2842425705773877145.jpg", "/1293911440826339391.jpg"]
+    images: ["/chamsocdamatchuyensau1.jpg", "/2842425705773877145.jpg"]
   },
 
   // VI. GỘI ĐẦU DƯỠNG SINH
