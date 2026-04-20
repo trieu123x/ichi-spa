@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const images = [
-  "/1010574840257195780.jpg",
-  "/1293911440826339391.jpg",
-  "/1612625643177023838.jpg",
-  "/3370205943518695100.jpg"
+  "/chanvoidakhoang.jpg",
+  "/lieutrinh120p.jpg",
+  "/nghithucduongsinhtoandien.jpg",
+  "/aroma.jpg"
 ];
 
 const Hero = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
           {t('hero.subtitle')}
         </div>
         
-        <h1 className="mb-6 text-5xl font-light leading-tight font-serif text-wood-dark lg:text-7xl">
+        <h1 className="mb-6 text-5xl font-light leading-tight font-cursive text-wood-dark lg:text-7xl">
           {t('hero.title_part1')}<br />{t('hero.title_part2')} <em className="italic font-normal text-wood-light">{t('hero.title_italic')}</em>
         </h1>
         
@@ -63,7 +63,7 @@ const Hero = () => {
           </button>
         </div>
       </motion.div>
-
+ 
       {/* Right Carousel */}
       <div className="relative overflow-hidden bg-be h-[40vh] lg:h-auto">
         <AnimatePresence mode="wait">
@@ -82,7 +82,7 @@ const Hero = () => {
         {/* Overlay Decoration */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-12">
           <div className="relative w-full h-full border border-white/20 opacity-30 flex items-center justify-center">
-             <div className="text-[10vw] lg:text-[5vw] font-serif text-white opacity-10 select-none">ICHI</div>
+             <div className="text-[10vw] lg:text-[5vw] font-cursive text-white opacity-10 select-none">ICHI</div>
           </div>
         </div>
 

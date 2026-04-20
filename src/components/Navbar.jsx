@@ -82,82 +82,46 @@ const Navbar = () => {
   const currentLanguage = languages.find(l => i18n.language.startsWith(l.code)) || languages[1];
 
   const LanguageSelector = ({ isMobile = false }) => {
-    const [isLangOpen, setIsLangOpen] = useState(false);
-
     return (
-      <div className="relative">
-        <button
-          onClick={() => setIsLangOpen(!isLangOpen)}
-          className={`flex items-center gap-2 px-3 py-1.5 rounded-sm transition-all duration-300 ${
-            isMobile 
-              ? 'bg-be-soft w-full justify-between border border-line/30' 
-              : 'hover:bg-wood/5 border border-transparent hover:border-line/30'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <img 
-              src={`https://flagcdn.com/w40/${currentLanguage.countryCode}.png`} 
-              alt={currentLanguage.code} 
-              className="w-5 h-auto rounded-[1px] shadow-sm"
-            />
-            <span className={`text-[0.7rem] uppercase tracking-widest font-medium ${isMobile ? 'text-text-dark' : 'text-text-mid'}`}>
-              {currentLanguage.label}
-            </span>
-          </div>
-          <motion.div
-            animate={{ rotate: isLangOpen ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
+      <div className={`flex items-center ${isMobile ? 'grid grid-cols-5 gap-3' : 'gap-3 lg:gap-4'}`}>
+        {languages.map((lng) => (
+          <button
+            key={lng.code}
+            onClick={() => {
+              changeLanguage(lng.code);
+              if (isMobile) setIsOpen(false);
+            }}
+            className={`group relative flex flex-col items-center gap-1.5 transition-all duration-300 ${
+              i18n.language.startsWith(lng.code)
+                ? 'scale-110'
+                : 'opacity-50 hover:opacity-100 hover:scale-105'
+            }`}
+            title={lng.label}
           >
-            <ChevronDown size={14} className="text-accent" />
-          </motion.div>
-        </button>
-
-        <AnimatePresence>
-          {isLangOpen && (
-            <>
-              {/* Backdrop to close on click outside */}
-              {!isMobile && (
-                <div 
-                  className="fixed inset-0 z-10" 
-                  onClick={() => setIsLangOpen(false)}
-                />
-              )}
-              <motion.div
-                initial={{ opacity: 0, y: isMobile ? 10 : 10, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                className={`${
-                  isMobile 
-                    ? 'relative mt-2 w-full grid grid-cols-2 gap-2' 
-                    : 'absolute left-0 lg:left-auto lg:right-0 mt-2 w-48 bg-white border border-line shadow-xl rounded-sm py-2 z-20'
-                }`}
-              >
-                {languages.map((lng) => (
-                  <button
-                    key={lng.code}
-                    onClick={() => {
-                      changeLanguage(lng.code);
-                      setIsLangOpen(false);
-                      if (isMobile) setIsOpen(false);
-                    }}
-                    className={`flex items-center gap-3 px-4 py-2 text-[0.75rem] transition-colors w-full text-left ${
-                      i18n.language.startsWith(lng.code)
-                        ? 'bg-wood/10 text-wood font-semibold'
-                        : 'text-text-mid hover:bg-wood/5'
-                    } ${isMobile ? 'bg-white border border-line/50 rounded-sm' : ''}`}
-                  >
-                    <img 
-                      src={`https://flagcdn.com/w40/${lng.countryCode}.png`} 
-                      alt={lng.code} 
-                      className="w-5 h-auto rounded-[1px]"
-                    />
-                    <span>{lng.label}</span>
-                  </button>
-                ))}
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+            <div className={`p-0.5 rounded-[2px] transition-all duration-300 ${
+              i18n.language.startsWith(lng.code)
+                ? 'bg-accent/20 ring-1 ring-accent'
+                : 'bg-transparent'
+            }`}>
+              <img 
+                src={`https://flagcdn.com/w40/${lng.countryCode}.png`} 
+                alt={lng.code} 
+                className="w-5 lg:w-6 h-auto rounded-[1px] shadow-sm"
+              />
+            </div>
+            {isMobile && (
+              <span className="text-[0.6rem] uppercase tracking-tighter text-text-dark font-medium">
+                {lng.code}
+              </span>
+            )}
+            {i18n.language.startsWith(lng.code) && !isMobile && (
+              <motion.div 
+                layoutId="activeLang"
+                className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-accent"
+              />
+            )}
+          </button>
+        ))}
       </div>
     );
   };
@@ -225,7 +189,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-between w-full lg:flex-1 lg:w-auto gap-4 lg:gap-6 lg:justify-end">
-        {/* Language Dropdown - Hidden on Mobile Toggle */}
+        {/* Language Selection - Now shows all flags */}
         <div className={`transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto' : 'opacity-100'}`}>
           <LanguageSelector />
         </div>
@@ -271,7 +235,7 @@ const Navbar = () => {
                     key={`mob-${item.name}-${idx}`}
                     to={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`text-xl font-serif tracking-[0.15em] p-3 rounded-sm transition-colors ${
+                    className={`text-xl font-cursive tracking-[0.15em] p-3 rounded-sm transition-colors ${
                       active ? 'bg-wood text-white' : 'text-text-dark hover:bg-wood/5'
                     }`}
                   >
@@ -285,7 +249,7 @@ const Navbar = () => {
                       if (location.pathname === '/') e.preventDefault();
                       handleScroll(item.href);
                     }}
-                    className={`text-xl font-serif tracking-[0.15em] p-3 rounded-sm transition-colors ${
+                    className={`text-xl font-cursive tracking-[0.15em] p-3 rounded-sm transition-colors ${
                       active ? 'bg-wood text-white' : 'text-text-dark hover:bg-wood/5'
                     }`}
                   >

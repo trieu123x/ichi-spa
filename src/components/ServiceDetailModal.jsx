@@ -54,7 +54,7 @@ const ServiceDetailModal = ({ service, onClose }) => {
             />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-wood-dark/50 to-transparent pointer-events-none" />
-          <div className="absolute bottom-6 left-6 text-white font-serif tracking-[0.2em] text-xs opacity-60">ICHI SPA EXPERIENCE</div>
+          <div className="absolute bottom-6 left-6 text-white font-cursive tracking-[0.2em] text-xs opacity-60">ICHI SPA EXPERIENCE</div>
         </div>
 
         {/* Right: Detailed Content */}
@@ -64,7 +64,7 @@ const ServiceDetailModal = ({ service, onClose }) => {
             {service.category[currentLang]}
           </div>
           
-          <h2 className="text-3xl lg:text-4xl font-serif text-wood-dark mb-4 leading-tight">{service.name[currentLang]}</h2>
+          <h2 className="text-3xl lg:text-4xl font-cursive text-wood-dark mb-4 leading-tight">{service.name[currentLang]}</h2>
           
           <div className="flex gap-6 mb-8 border-b border-line pb-6">
             <div className="flex items-center gap-2 text-[0.85rem] text-text-mid">

@@ -21,7 +21,7 @@ const PriceTable = () => {
             <span className="w-7 h-px bg-accent"></span>
             {t('prices.subtitle')}
           </div>
-          <h2 className="text-4xl lg:text-5xl font-light font-serif text-wood-dark">
+          <h2 className="text-4xl lg:text-5xl font-light font-cursive text-wood-dark">
             {t('prices.title_part1')} <em className="italic font-normal text-wood-light">{t('prices.title_italic')}</em>
           </h2>
         </div>

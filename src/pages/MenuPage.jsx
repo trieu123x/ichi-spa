@@ -23,7 +23,7 @@ const MenuPage = () => {
             {t('menu_page.subtitle')}
             <span className="w-8 h-px bg-accent"></span>
           </div>
-          <h1 className="text-5xl lg:text-6xl font-serif text-wood-dark mb-6">{t('menu_page.title')}</h1>
+          <h1 className="text-5xl lg:text-6xl font-cursive text-wood-dark mb-6">{t('menu_page.title')}</h1>
           <p className="text-[0.95rem] text-text-mid font-light max-w-xl mx-auto opacity-70 leading-relaxed">
             {t('menu_page.desc')}
           </p>

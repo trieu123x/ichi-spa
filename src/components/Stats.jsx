@@ -26,7 +26,7 @@ const Stats = () => {
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: 0.2 + idx * 0.1, duration: 0.5 }}
-            className="mb-2 text-4xl lg:text-5xl font-light font-serif text-wood group-hover:scale-105 transition-transform"
+            className="mb-2 text-4xl lg:text-5xl font-cursive font-light text-wood group-hover:scale-105 transition-transform"
           >
             {stat.value}
           </motion.div>

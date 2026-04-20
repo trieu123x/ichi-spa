@@ -90,7 +90,7 @@ const Services = () => {
             <span className="w-7 h-px bg-accent"></span>
             {t('services.subtitle')}
           </div>
-          <h2 className="text-4xl lg:text-5xl font-light font-serif text-wood-dark leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-light font-cursive text-wood-dark leading-tight">
             {t('services.title_part1')} <em className="italic font-normal text-wood-light">{t('services.title_italic')}</em><br className="hidden md:block" /> {t('services.title_part2')}
           </h2>
         </div>
@@ -116,7 +116,7 @@ const Services = () => {
             <div className="transform group-hover:scale-110 transition-transform duration-500 origin-left">
               {service.icon}
             </div>
-            <h3 className="mb-2 text-lg sm:text-2xl font-serif text-wood-dark font-normal">{service.name}</h3>
+            <h3 className="mb-2 text-lg sm:text-2xl font-cursive text-wood-dark font-normal">{service.name}</h3>
             <p className="mb-8 text-[0.88rem] leading-relaxed font-light text-text-soft opacity-80">{service.desc}</p>
             <div className="text-[0.9rem] font-medium tracking-tight text-wood">{service.price}</div>
             <ArrowUpRight className="absolute transition-all duration-300 bottom-8 right-8 w-6 h-6 text-accent opacity-40 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />

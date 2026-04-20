@@ -162,7 +162,7 @@ export const extendedServices = [
       ko: ["심층 회복", "완벽한 휴식", "에너지 재생"],
       zh: ["深层恢复", "绝对放松", "能量再生"]
     },
-    images: ["/nghithucduongsinhtoandien.jpg"]
+    images: ["/120phut.jpg","/nghithucduongsinhtoandien.jpg"]
   },
   {
     id: 'neck-shoulder-intensive',
@@ -210,7 +210,7 @@ export const extendedServices = [
       ko: ["발의 가벼움", "피로 해소", "숙면 유도"],
       zh: ["消除脚部沉重", "减轻麻木疲劳", "助眠"]
     },
-    images: ["/chanvoidanong1.jpg", "/chanvoidanong2.jpg"]
+    images: ["/chanvoidakhoang.jpg"]
   },
   {
     id: 'foot-herbal',
@@ -233,7 +233,7 @@ export const extendedServices = [
       ko: ["발의 온열", "근육 이완", "발 독소 배출"],
       zh: ["温暖足部", "软化肌束", "脚部排毒"]
     },
-    images: ["/chanvoidanong3.jpg"]
+    images: ["/chanvoibongthaoduoc.jpg"]
   },
 
   // V. CHĂM SÓC DA MẶT

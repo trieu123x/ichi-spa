@@ -50,7 +50,7 @@ const BookingForm = () => {
           <span className="w-7 h-px bg-accent"></span>
           {t('booking.subtitle')}
         </div>
-        <h2 className="mb-8 text-4xl lg:text-5xl font-light font-serif text-be-light leading-snug">
+        <h2 className="mb-8 text-4xl lg:text-5xl font-light font-cursive text-be-light leading-snug">
           {t('booking.title_part1')}<br />{t('booking.title_part2')} <em className="italic font-normal text-white">{t('booking.title_italic')}</em>
         </h2>
         <p className="mb-12 text-[0.92rem] leading-loose font-light text-be/60 max-w-md opacity-80">
@@ -198,11 +198,11 @@ const BookingForm = () => {
               </div>
               
               <div className="space-y-4">
-                <h3 className="text-3xl font-serif text-be-light">{t('booking.form.success.title')}</h3>
+                <h3 className="text-3xl font-cursive text-be-light">{t('booking.form.success.title')}</h3>
                 <div className="space-y-2 text-[0.95rem] text-be/70 font-light leading-relaxed">
                   <p>{t('booking.form.success.thanks')}</p>
                   <p className="text-accent font-medium">{t('booking.form.success.time_info', { time: formData.date })}</p>
-                  <p className="italic italic-serif mt-6 opacity-80">{t('booking.form.success.footer')}</p>
+                  <p className="italic font-cursive mt-6 opacity-80">{t('booking.form.success.footer')}</p>
                 </div>
               </div>
 
