@@ -69,21 +69,19 @@ i18n
               address: "Địa chỉ",
               phone: "Điện thoại",
               opening: "Giờ mở cửa",
-              opening_val: "9:00 - 21:00 hàng ngày"
+              opening_val: "10:00 - 22:30 hàng ngày"
             },
             form: {
               name: "Họ và tên",
               phone: "Số điện thoại",
-              service: "Dịch vụ",
-              date: "Ngày hẹn",
-              note: "Ghi chú thêm",
+              email: "Email",
               name_placeholder: "Nguyễn Thị Lan",
               submit: "Xác nhận đặt lịch ↗",
               reset: "Đặt lại",
               success: {
                 title: "Đặt lịch thành công! ",
                 thanks: "Cảm ơn bạn đã tin tưởng Ichi Spa.",
-                time_info: "Chúng tôi sẽ chăm sóc bạn vào {{time}}.",
+                time_info: "Nhân viên sẽ sớm liên hệ qua điện thoại hoặc email của bạn.",
                 footer: "Hẹn gặp bạn để tận hưởng trải nghiệm thư giãn tuyệt vời "
               }
             }
@@ -171,21 +169,19 @@ i18n
               address: "Address",
               phone: "Phone",
               opening: "Opening Hours",
-              opening_val: "9:00 - 21:00 Daily"
+              opening_val: "10:00 - 22:30 Daily"
             },
             form: {
               name: "Full Name",
               phone: "Phone Number",
-              service: "Service",
-              date: "Appointment Date",
-              note: "Additional Notes",
+              email: "Email Address",
               name_placeholder: "Jane Doe",
               submit: "Confirm Booking ↗",
               reset: "Reset",
               success: {
                 title: "Booking Successful! ",
                 thanks: "Thank you for choosing Ichi Spa.",
-                time_info: "We will take care of you on {{time}}.",
+                time_info: "Our staff will contact you shortly.",
                 footer: "See you soon for a wonderful relaxation experience "
               }
             }
@@ -273,21 +269,19 @@ i18n
               address: "住所",
               phone: "電話番号",
               opening: "営業時間",
-              opening_val: "毎日 9:00 - 21:00"
+              opening_val: "毎日 10:00 - 22:30"
             },
             form: {
               name: "氏名",
               phone: "電話番号",
-              service: "サービス",
-              date: "予約日",
-              note: "備考",
+              email: "メールアドレス",
               name_placeholder: "お名前",
               submit: "予約を確定する ↗",
               reset: "リセット",
               success: {
                 title: "予約が完了しました！ ",
                 thanks: "Ichi Spaをご利用いただきありがとうございます。",
-                time_info: "{{time}}にお待ちしております。",
+                time_info: "担当スタッフより追ってご連絡いたします。",
                 footer: "最高の美と癒やしのひとときをお楽しみください "
               }
             }
@@ -375,21 +369,19 @@ i18n
               address: "주소",
               phone: "전화번호",
               opening: "영업 시간",
-              opening_val: "매일 9:00 - 21:00"
+              opening_val: "매일 10:00 - 22:30"
             },
             form: {
               name: "성함",
               phone: "전화번호",
-              service: "서비스",
-              date: "예약 날짜",
-              note: "추가 메모",
+              email: "이메일",
               name_placeholder: "이름",
               submit: "예약 확정 ↗",
               reset: "초기화",
               success: {
                 title: "예약 성공! ",
                 thanks: "Ichi Spa를 선택해 주셔서 감사합니다.",
-                time_info: "{{time}}에 모시겠습니다.",
+                time_info: "직원이 곧 연락드리겠습니다.",
                 footer: "최고의 미와 힐링의 시간을 즐겨보세요 "
               }
             }
@@ -477,21 +469,19 @@ i18n
               address: "地址",
               phone: "电话",
               opening: "营业时间",
-              opening_val: "每日 9:00 - 21:00"
+              opening_val: "每日 10:00 - 22:30"
             },
             form: {
               name: "姓名",
               phone: "手机号码",
-              service: "预约项目",
-              date: "预约日期",
-              note: "备注信息",
+              email: "电子邮件",
               name_placeholder: "姓名",
               submit: "确认预约 ↗",
               reset: "重置",
               success: {
                 title: "预约成功！",
                 thanks: "感谢您选择 Ichi Spa。",
-                time_info: "我们将于 {{time}} 为您服务。",
+                time_info: "我们的工作人员将很快与您联系。",
                 footer: "期待为您带来美妙的放松体验"
               }
             }

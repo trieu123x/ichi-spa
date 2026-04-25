@@ -242,7 +242,7 @@ export const extendedServices = [
     category: { vi: 'Chăm Sóc Da Mặt', en: 'Facial Care', jp: 'フェイシャルケア', ko: '페이셜 케어', zh: '面部护理' },
     name: { vi: "Dưỡng sinh da mặt", en: "Basic Facial", jp: "ベーシックフェイシャル", ko: "베이직 페이셜", zh: "基础护理" },
     duration: { vi: "30 phút", en: "30 min", jp: "30 分", ko: "30 분", zh: "30 分钟" },
-    price: { vi: "550.000", en: "550k", jp: "550k", ko: "550k", zh: "550k" },
+    price: { vi: "399.000", en: "399k", jp: "399k", ko: "399k", zh: "399k" },
     description: { vi: "Làm sạch và thư giãn nhẹ nhàng.", en: "Cleansing and gentle relaxation.", jp: "クレンジングと穏やかな休息。", ko: "클렌징과 가벼운 휴식。", zh: "清洁皮肤，温和放松。" },
     longDescription: {
       vi: "Quy trình làm sạch chuyên sâu giúp loại bỏ bụi bẩn, bã nhờn, trả lại sự thông thoáng và sức sống cho vùng mặt.",
@@ -265,7 +265,7 @@ export const extendedServices = [
     category: { vi: 'Chăm Sóc Da Mặt', en: 'Facial Care', jp: 'フェイシャルケア', ko: '페이셜 케어', zh: '面部护理' },
     name: { vi: "Dưỡng sinh chuyên sâu", en: "Intensive Facial", jp: "集中フェイシャル", ko: "인텐시브 페이셜", zh: "深度护理" },
     duration: { vi: "60 phút", en: "60 min", jp: "60 分", ko: "60 분", zh: "60 分钟" },
-    price: { vi: "880.000", en: "880k", jp: "880k", ko: "880k", zh: "880k" },
+    price: { vi: "599.000", en: "599k", jp: "599k", ko: "599k", zh: "599k" },
     description: { vi: "Nuôi dưỡng, giúp da rạng rỡ, ẩm mịn.", en: "Deeply nourish for radiant skin.", jp: "輝く肌のための深層栄養補給。", ko: "빛나는 피부를 위한 깊은 영양 공급。", zh: "滋养肌肤，令肌肤光彩滋润。" },
     longDescription: {
       vi: "Kết hợp các dưỡng chất cao cấp cùng kỹ thuật massage nâng cơ, giúp da hấp thụ trọn vẹn tinh túy thảo mộc.",
@@ -288,7 +288,7 @@ export const extendedServices = [
   {
     id: 'hair-basic',
     category: { vi: 'Gội Đầu', en: 'Hair Care', jp: 'ヘアケア', ko: '헤어 케어', zh: '洗头/美发' },
-    name: { vi: "Gội Đầu Dưỡng Sinh", en: "Clean Wash", jp: "クリーンウォッシュ", ko: "클린 워시", zh: "清洁洗发" },
+    name: { vi: "Gội Sạch", en: "Clean Wash", jp: "クリーンウォッシュ", ko: "클린 워시", zh: "清洁洗发" },
     duration: { vi: "30 phút", en: "30 min", jp: "30 分", ko: "30 분", zh: "30 分钟" },
     price: { vi: "99.000", en: "99k", jp: "99k", ko: "99k", zh: "99k" },
     description: { vi: "Làm sạch thảo dược nhẹ nhàng.", en: "Gentle herbal cleansing.", jp: "穏やかなハーブクレンジング。", ko: "부드러운 허브 클렌징。", zh: "温和草本清洁。" },
@@ -334,7 +334,7 @@ export const extendedServices = [
   {
     id: 'hair-pro',
     category: { vi: 'Gội Đầu', en: 'Hair Care', jp: 'ヘアケア', ko: '헤어 케어', zh: '洗头/美发' },
-    name: { vi: "Gội chuyên sâu", en: "Intensive N&S Wash", jp: "首・肩シャンプー全集", ko: "집중 목/어깨 샴푸", zh: "深度洗发" },
+    name: { vi: "Gội cổ vai gáy chuyên sâu", en: "Intensive N&S Wash", jp: "首・肩シャンプー全集", ko: "집중 목/어깨 샴푸", zh: "深度洗发" },
     duration: { vi: "60 phút", en: "60 min", jp: "60 分", ko: "60 분", zh: "60 分钟" },
     price: { vi: "350.000", en: "350k", jp: "350k", ko: "350k", zh: "350k" },
     description: { vi: "Làm mềm cơ vùng vai gáy mỏi nhiều.", en: "Soften muscles for severe aches.", jp: "深刻な凝りを和らげるシャンプー。", ko: "심한 목/어깨 결림을 풀어주는 샴푸。", zh: "缓解严重的颈肩酸痛。" },

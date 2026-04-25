@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Leaf, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,30 +130,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 flex flex-col lg:flex-row items-center lg:justify-between px-6 py-3 lg:py-4 border-b bg-cream/95 backdrop-blur-md border-line lg:px-12 gap-y-3 lg:gap-y-0">
       <div className="flex items-center justify-between w-full lg:flex-1 lg:w-auto">
-        <Link to="/" className="group relative flex items-center gap-3 hover:opacity-90 transition-opacity">
-          <motion.div 
-            whileHover={{ rotate: -10, scale: 1.1 }}
-            className="relative flex items-center justify-center w-10 lg:w-12 h-10 lg:h-12 rounded-full bg-linear-to-tr from-wood/30 to-accent/30"
-          >
-            <Leaf className="text-wood-dark w-6 lg:w-7 h-6 lg:h-7" strokeWidth={2} />
-            <motion.div 
-              animate={{ scale: [1, 1.25, 1], opacity: [0.3, 0.7, 0.3] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0 rounded-full bg-accent/20 blur-lg"
-            />
-          </motion.div>
-          
-          <div className="flex flex-col -space-y-1 lg:-space-y-1.5">
-            <span className="text-3xl lg:text-4xl font-bold tracking-tight font-brand text-wood-dark leading-none">
-              ichi
-            </span>
-            <div className="flex items-center gap-2 pt-0.5 lg:pt-1">
-              <div className="h-[2px] w-4 lg:w-6 bg-accent" />
-              <span className="text-[0.6rem] lg:text-sm font-sans font-bold uppercase tracking-[0.5em] text-wood-light">
-                spa
-              </span>
-            </div>
-          </div>
+        <Link to="/" className="group relative flex items-center hover:opacity-90 transition-opacity">
+          <img src={logo} alt="Ichi Spa" className="h-14 lg:h-20 w-auto object-contain scale-125 lg:scale-150 origin-left" />
         </Link>
       </div>
       

@@ -8,9 +8,7 @@ const BookingForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    service: 'Massage Trị Liệu',
-    date: '',
-    note: ''
+    email: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -30,9 +28,7 @@ const BookingForm = () => {
     setFormData({
       name: '',
       phone: '',
-      service: 'Massage Trị Liệu',
-      date: '',
-      note: ''
+      email: '',
     });
   };
 
@@ -131,40 +127,14 @@ const BookingForm = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-3">
-                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.service')}</label>
-                  <select 
-                    value={formData.service}
-                    onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all appearance-none cursor-pointer"
-                  >
-                    <option className="bg-wood-dark" value="Massage Trị Liệu">{t('menu.body-aroma.name')}</option>
-                    <option className="bg-wood-dark" value="Chăm Sóc Da Mặt">{t('menu.facial-basic.name')}</option>
-                    <option className="bg-wood-dark" value="Cổ Vai Gáy">{t('menu.neck-shoulder-pro.name')}</option>
-                    <option className="bg-wood-dark" value="Gội Đầu Dưỡng Sinh">{t('menu.hair-60.name')}</option>
-                  </select>
-                </div>
-                <div className="space-y-3">
-                  <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.date')}</label>
-                  <input 
-                    required
-                    type="date" 
-                    value={formData.date}
-                    onChange={(e) => setFormData({...formData, date: e.target.value})}
-                    className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all invert opacity-70"
-                  />
-                </div>
-              </div>
-
               <div className="space-y-3">
-                <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.note')}</label>
-                <textarea 
-                  rows="3"
-                  placeholder="..."
-                  value={formData.note}
-                  onChange={(e) => setFormData({...formData, note: e.target.value})}
-                  className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all resize-none placeholder:opacity-30"
+                <label className="text-[0.68rem] uppercase tracking-widest text-accent font-semibold">{t('booking.form.email')}</label>
+                <input 
+                  type="email" 
+                  placeholder="email@example.com"
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  className="w-full px-5 py-4 bg-white/5 border border-be/10 rounded-sm text-be-light text-[0.9rem] outline-none focus:border-accent focus:bg-white/10 transition-all placeholder:opacity-30"
                 />
               </div>
 
@@ -201,7 +171,7 @@ const BookingForm = () => {
                 <h3 className="text-3xl font-cursive text-be-light">{t('booking.form.success.title')}</h3>
                 <div className="space-y-2 text-[0.95rem] text-be/70 font-light leading-relaxed">
                   <p>{t('booking.form.success.thanks')}</p>
-                  <p className="text-accent font-medium">{t('booking.form.success.time_info', { time: formData.date })}</p>
+                  <p className="text-accent font-medium">{t('booking.form.success.time_info')}</p>
                   <p className="italic font-cursive mt-6 opacity-80">{t('booking.form.success.footer')}</p>
                 </div>
               </div>

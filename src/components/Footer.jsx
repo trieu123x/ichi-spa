@@ -27,14 +27,14 @@ const Footer = () => {
               Hotline: 0395 093 087
             </p>
             <p className="mt-2 opacity-40 italic">
-              10:00 - 22:00 Daily
+              10:00 - 22:30 Daily
             </p>
           </div>
         </div>
         
         <div className="w-full lg:w-[400px] h-[200px] rounded-lg overflow-hidden grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 border border-white/10">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9199195315546!2d105.80586021102502!3d21.035888987452315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab14daba7127%3A0x2dfcd981d90d400!2s108%20Phan%20Ke%20Binh%2C%20Ba%20Dinh%2C%20Ha%20Noi!5e0!3m2!1sen!2svn!4v1774769954116!5m2!1sen!2svn"
+            src="https://www.google.com/maps?q=Ichi+Spa+Body+%26+Foot+Massage,+108+Phan+Ke+Binh,+Ba+Dinh,+Ha+Noi&output=embed"
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
