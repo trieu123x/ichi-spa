@@ -66,7 +66,7 @@ export const menuData = {
         items: [
           {
             name: { vi: "Ngải Đặc Biệt (được tin chọn nhất)", en: "Special Moxa (Most Chosen)", jp: "スペシャルもぐさ（最も選ばれている）", ko: "특별 쑥뜸 (가장 인기)", zh: "特色艾灸（最受欢迎）" },
-            badge: "HOT",
+            badge: "95% back",
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
               vi: "Hơi ấm từ điếu ngải giúp làm ấm sâu và lưu thông tốt hơn, giải toả căng thẳng và đau mỏi. 👉 Lựa chọn phù hợp nếu bạn muốn phục hồi ổn định thay vì chỉ thư giãn tạm thời.",
