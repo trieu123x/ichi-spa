@@ -79,7 +79,7 @@ export const menuData = {
           },
           {
             name: { vi: "MUỐI THẢO DƯỢC (Dịch vụ làm nên tên tuổi)", en: "HERBAL SALT (Signature Service)", jp: "ハーバルソルト（看板メニュー）", ko: "허브 소금 (대표 메뉴)", zh: "草本药盐（品牌特色）" },
-            badge: "95% back",
+            badge: "HOT",
             duration: { vi: ["60 phút", "90 phút"], en: ["60 min", "90 min"], jp: ["60분", "90分"], ko: ["60분", "90분"], zh: ["60分钟", "90分钟"] },
             description: {
               vi: "Sức nóng từ muối thảo dược sao thủ công giúp làm tan các khối cơ xơ cứng và giải phóng các điểm tắc nghẽn tức thì. 👉 Lựa chọn phù hợp cho người bị bó cơ vai gáy - lưng, tê bì chân tay.",
